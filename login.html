@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>用户登录 - 林先生在线工具箱</title>
+    <meta name="keywords" content="工具,源码查看器原创,在线,工具">
+    <meta name="description" content="这是一个非常Nice的在线工具箱">
+    <link rel="stylesheet" href="static/css/dashlite.css">
+	<link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body class="nk-body npc-invest bg-lighter ">
+    <!-- wrap @s -->
+    <div class="nk-wrap ">
+        <!-- main header @s -->
+<div class="nk-header nk-header-fluid nk-header-fixed is-light">
+    <div class="container-xl">
+        <div class="nk-header-wrap link-between">
+            <div class="nk-menu-trigger mr-sm-2 d-lg-none">
+                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-menu"></em></a>
+            </div>
+            <div class="nk-header-brand">
+                <a href="index2.html" class="logo-link text-base"><img src="static/picture/logo.png" class="hide-mb-sm">林先生在线工具箱</a>
+            </div>
+            <!-- .nk-header-brand -->
+            <div class="nk-header-tools nk-header-menu" data-content="headerNav">
+                <div class="nk-header-mobile">
+                    <div class="nk-header-brand">
+                        <a href="index2.html" class="logo-link text-base">
+                            <span class="nio-version" style="font-size: 21px;position: inherit;">林先生在线工具箱</span>
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div>
+                <!-- Menu -->
+                <ul class="nk-menu nk-menu-main">
+                    <li class="nk-menu-item ">
+                        <a href="index2.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-home"></em>
+                            <span class="nk-menu-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item ">
+                        <a href="stars.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-heart"></em>
+                            <span class="nk-menu-text">我的收藏</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item ">
+                        <a href="comment.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-comments"></em>
+                            <span class="nk-menu-text">留言反馈</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- .nk-header-menu -->
+            <div class="no-gutters">
+                <ul class="nk-quick-nav">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="progress-rating dark-switch ">
+                            <span class="nk-menu-icon">
+                                <em class="icon ni ni-moon"></em>
+                                <em class="icon ni ni-sun d-none"></em>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown user-dropdown order-sm-first active">
+                                                <a href="" class="dropdown-toggle nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-user-circle mr-1"></em>
+                            <div class="">
+                                未登录
+                            </div>
+                        </a>
+                                            </li>
+                    <!-- .dropdown -->
+                </ul>
+                <!-- .nk-quick-nav -->
+            </div>
+            <!-- .nk-header-tools -->
+        </div>
+        <!-- .nk-header-wrap -->
+    </div>
+    <!-- .container-fliud -->
+</div>
+<!-- main header @e -->
+        <!-- content @s -->
+        
+<!-- content @s -->
+<div class="nk-content nk-content-lg nk-content-fluid">
+    <div class="container-xl">
+        <div class="col-10 col-sm-8 col-md-6 col-xl-4 center-block">
+        <div class="nk-content-body" style="padding-top:50%">
+            <div class="card card-preview">
+                <div class="card-inner mt-3">
+                    <div class="row g-2 text-center">
+                        <div class="col-12">
+                            <p>请选择登录方式</p>
+                            <p><a href="javascript:connect('qq')"><img class="loginbtn" src="static/picture/qq.svg"></a>
+                            <a href="javascript:connect('wx')"><img class="loginbtn" src="static/picture/wechat.svg"></a></p>
+                            <p class="text-muted">新用户快捷登录后会自动注册账号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+        <!-- content @d -->
+        <div class="nk-footer nk-footer-fluid bg-lighter">
+    <div class="container-xl">
+        <div class="nk-footer-wrap">
+            <div class="nk-footer-copyright"> &copy; 2024 林先生在线工具箱 <br>本站由<a href="https://www.tiezhuwangluo.com">工具箱网</a>强力驱动            </div>
+        </div>
+    </div>
+</div>
+<!-- footer @e -->
+    </div>
+    <!-- wrap @e -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/layer.js"></script>
+<script src="static/js/nioapp.min.js"></script>
+<script src="static/js/script.js"></script>
+<script src="static/js/common.js"></script>
+
+<script>
+function connect(type){
+    httpPost("/oauth/login", {type: type}, function(data){
+        window.location.href = data;
+    })
+}
+</script>
+
+</body>
+</html>
