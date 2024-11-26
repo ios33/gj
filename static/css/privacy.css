@@ -1,0 +1,31 @@
+/* pass css */
+@font-face {
+    font-family: "yahei";
+    src: url("../font/yahei.ttf")format("truetype");
+}
+#privacy-mask{    
+	background: #242f42;
+    opacity: 0.54;
+    width: 100%;
+    position: fixed ;
+    height: 100%;
+    top: 0 ;
+    left: 0 ;
+    z-index: 999999996;
+}	
+.privacy-main{
+    border-radius: 10px; 
+	box-shadow: 0 0 14px rgba(221, 221, 221,0.5); 
+	background:#FFFFFF;
+    width: 86%; height:460px; 
+    position: fixed ; 
+	top:calc(50% - 230px);
+    left: 7% ;
+    z-index: 999999997;
+	font-family: "yahei"; 
+}
+.privacy-main-title{ font-size:24px; line-height:3; border-bottom:#e5e5e5 solid 1px; text-align:center;}
+.privacy-main-content{text-align:center;  padding:0 25px 50px; }
+.privacy-main-img img{ width:100%; border-radius: 10px 10px 0 0;}
+.privacy-main-tit{ font-size:18px; line-height:1.4; margin:30px auto; }
+.privacy-bth{border-radius:6px; background:#2da0f5; border:none; font-size:16px; padding:7px 35px; color:#FFFFFF; cursor:pointer;}

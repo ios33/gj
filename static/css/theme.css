@@ -1,0 +1,62 @@
+/*****************************
+* PHPwork官方网址： ruanjiesoft.com
+* PHPwork应用官方QQ群： 317075601
+* PHPwork应用开发者QQ： 1980572700
+* 不得使用本软件用于非法用途，不得违反国家法律。
+*************************************/
+
+a,a:link{ color: #000; text-decoration: none;}
+.weui-media-box_appmsg .weui-media-box__hd {    margin-right: 16px;    width: 100px;    height: 80px;}
+.weui-media-box__title {height: 55px;
+    display: -webkit-box;  -webkit-box-orient: vertical;  -webkit-line-clamp: 2;
+    white-space: normal;
+}
+
+.container{max-width:1080px !important;margin:0 auto;margin-bottom:60px;}
+
+.rj-index-article_sort{width: 100%;white-space: nowrap;overflow-x: auto; -webkit-overflow-scrolling:touch;}
+.rj-index-article_sort a{padding:5px;color:#000;}
+
+/* 卡片式 */
+.rj_card{margin:15px;border-radius:10px;overflow: hidden;box-shadow: 0 0 4px rgba(221, 221, 221,0.5);background-color:#fff;}
+
+/*
+首页搜索
+*/
+.rj_search{/*position: fixed;z-index:999;*/box-sizing: border-box;width:100%;padding:8px 10px;background-color:#f2f2f2;}
+.rj_search span{display:inline-block; position:relative;}
+.rj_search span .weui-icon-search{position:absolute;top:3px;left:5px;}
+.rj_search input[name=key]{box-sizing:border-box;border:0;padding:4px 2px 2px 30px;width:100%;border-radius:5px;height:30px;}
+.rj_search input:focus{border:1px solid #eee !important}
+.rj_search input[type="submit"]{margin-left:5px;background-color:#eee;border:0;background:none;line-height:20px;width:95%}
+
+/*
+我的头像
+*/
+.rj_my_head{text-align: center;padding: 30px 15px 20px 15px;display: flex;align-items: center;}
+.rj_my_head .rj_avatar{width:70px;height:70px;border-radius: 50%; box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.5) ;}
+.rj_my_head .rj_nickname{padding-left: 15px;}
+.rj_my_head .rj_nickname div{text-align: left;}
+
+.rj-copyright{padding:10px 5px;text-align: center;}
+/* 底部导航 */
+.rj-tabbar{position: fixed;z-index: 500;display: flex;bottom: 0;width: 100%;max-width:1080px !important;
+    background-color: #fff;box-shadow:0 -4px 5px rgba(192, 191, 196, 0.2); }
+.rj-tabbar a{ flex: 1;padding: 5px 0 0; }
+.rj-tabbar .rj-foot-img{height: 27px;width: 27px; margin: 0 auto;}
+.rj-tabbar .rj-foot-img img{width: 100%;}
+.rj-tabbar .rj_tabbar_label{margin:0;text-align: center;   color: #000; font-size: 12px; line-height: 1.8;}
+
+/* 单页 */
+.rj-title{padding:10px;line-height:150%;margin-top:30px;font-size:18px;text-align:center;}
+.rj-content{padding:10px; min-height:200px;background-color:rgba(255,255,255,0.8);}
+.rj-content img{ max-width: 100% !important;height: auto !important;}
+
+/*二级页面*/
+.rj-my-top{display: flex;padding: 5px;justify-content: space-between;align-items: center;color: #000;text-align: center;}
+
+
+/* pc 屏幕大于 800px */
+@media screen and (min-width:800px) {
+	.container,.rj-tabbar{max-width:677px !important;}
+}

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "down"; /* Project id 2526058 */
+  src: url('../font/font_2526058_suqrvheg209.woff2') format('woff2'),
+       url('../font/font_2526058_suqrvheg209.woff') format('woff'),
+       url('../font/font_2526058_suqrvheg209.ttf') format('truetype');
+}
+
+.down {
+  font-family: "down" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.s-anquan:before {
+  content: "\e610";
+}
+
+.s-you:before {
+  content: "\e6fe";
+}
+
+.s-back:before {
+  content: "\e600";
+}
+
+.s-jingxuan:before {
+  content: "\e6e2";
+}
+
+.s-HOT:before {
+  content: "\e661";
+}
+
+.s-kefu:before {
+  content: "\e63a";
+}
+
+.s-404:before {
+  content: "\e61c";
+}
+
+.s-huan:before {
+  content: "\e629";
+}

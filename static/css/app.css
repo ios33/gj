@@ -1,0 +1,88 @@
+/* Your app styles here */
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+    display: none;
+}
+
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rj_card {
+    margin: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(0.0417rem);
+    box-shadow: 0.0078rem 0.0135rem 7px 0 rgba(0,0,0,0.15), inset -0.0078rem -0.0135rem 0.0156rem 0 rgba(0,0,0,.3), inset 0.0078rem 0.0135rem 0.0156rem 0 rgba(255,255,255,.3);
+    background-color: rgba(225, 225, 225,0.2);
+	margin-bottom: 15px;
+}
+
+.sticky-content {
+    margin: 0;
+    padding:10px 0 0 26px;
+    border: 0;
+}
+
+.sticky-content li{
+	display:inline;
+	float: left;
+}
+.sticky-content li:nth-of-type(4){
+	display:inline;
+
+}
+
+.sticky-items {
+    width: 21%;
+    position: relative;
+    padding: 15px 8px 15px 5px;
+    
+}.sticky-items_img {
+   
+    margin: 0 auto;
+    border-radius: 30%;
+    overflow: hidden;
+}.biging img {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.sticky-items_title {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+   
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   
+}
+.sticky-items::after {
+    font-family: "down" !important;
+    font-size: 20px;
+    color: #ff0000;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e6e2';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.apps-list .app-block .title{display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: flex-start;}
+.apps-list .app-block .title .title-tips{ margin-left:10px; background:#ff7e5f; color:#FFFFFF; padding:2px 10px; border-radius: 10px; font-size:10px; font-weight:normal; line-height:1.6;}
+.apps-list .app-block .title .tips1{ background:#399ef7;}
+.apps-list .app-block .title .tips2{ background:#ffc300;}
+.apps-list .app-block .category{ margin-top:10px;}
+

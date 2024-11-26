@@ -1,0 +1,81 @@
+/* pass css */
+@font-face {
+    font-family: "AlimamaDaoLiTi";
+    src: url("../font/AlimamaDaoLiTi.ttf")format("truetype");
+}
+.page-message{ width:100%; padding-bottom:30px;}
+.message-title{ font-size:18px; line-height:1.4; margin-top:30px; border-bottom:#eaeaea solid 2px; padding-bottom:14px;}
+.message-title span {
+    color: #279cf4;
+    border-bottom: #279cf4 solid 2px;  
+	padding-bottom:15px;
+}
+
+.form-group{ margin-top:20px; }
+.touxing{ margin-top:20px;}
+input[type=text].ips,select{
+    color: #999999;
+    border: 1px solid #e4eaec;
+    border-radius:5px; 
+    width:100%;
+	line-height:30px;
+    padding: 6px 15px;
+}
+textarea{
+    color: #999999;
+    border: 1px solid #e4eaec;
+    border-radius:5px; 
+    width:100%;
+	line-height:30px;
+    padding: 6px 15px;
+}
+.bth{ width:100%;  background:#279cf4; border:none; font-size:16px; color:#FFFFFF; cursor:pointer; text-align:center; line-height:40px;}
+.yzm{display: flex; flex-wrap: wrap;  justify-content: flex-start;}
+.yzm-input{ width:100px;}
+.yzm-img{ width:120px; margin-left:10px;}
+.yzm-img img{width:120px;}
+
+.bth:hover{ background:#248cda;}
+select.ips{ 
+background:none; height:44px;
+/*appearance: normal !important;
+-moz-appearance:normal !important;
+-webkit-appearance:normal !important*/;
+}
+
+
+input[type=text].ips:focus,textarea:focus {
+  outline: none; /* 移除默认的聚焦轮廓 */
+  border: 1px solid #4A90E2; /* 设置高亮边框 */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* 添加蓝色阴影以增强高亮效果 */
+}
+.form-button{margin-top:20px; }
+
+.page-message-list{ padding-top:20px; width:100%;}
+.page-message-item{ background:#fff; margin-bottom:20px; padding:20px;  }
+.message-item-head{display: flex; flex-wrap: wrap;  justify-content: flex-start; margin-bottom:20px;}
+.message-item-touxing{ width:50px;}
+.message-item-touxing img{ width:50px;}
+.message-item-name{ margin-left:10px; font-size:14px; color:#279cf4;}
+.message-item-text{ line-height:30px;}
+
+.message-pages{ text-align:center;}
+
+.message-pages a{ display:inline-block;}
+.message-pages a, .message-pages span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.42857;
+    margin-left:4px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+}
+.message-pages a.active  , .message-pages a:hover,.message-pages  span.active, .message-pages span:hover {
+    border-color: #279cf4; 
+	background:#279cf4; 
+	color:#FFFFFF;
+}
+
