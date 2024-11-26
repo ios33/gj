@@ -1,0 +1,367 @@
+<html>
+
+  
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+
+  <title>TrollFools （插件注入）_林先生苹果工具箱</title>
+
+<meta name="description" content="一键推出所有dylib动态库支持筛选已注入应用程序支持过滤不支持注入应用程序 支持巨魔安装的应用支持AppStore应用支持可移除的系统应用">
+
+<meta name="keywords" content="">
+
+    <link rel="stylesheet" href="static/css/weui.min.css">
+
+    <link rel="stylesheet" href="static/css/theme.css">
+
+    <script src="static/js/layui.js"></script>
+
+    <link id="layuicss-laydate" rel="stylesheet" href="static/css/laydate.css" media="all">
+
+    <link id="layuicss-layer" rel="stylesheet" href="https://lin.mrlin.vip/static/css/layer.css?v=3.5.1" media="all">
+
+    <link id="layuicss-skincodecss" rel="stylesheet" href="static/css/code.css" media="all">
+    <link id="layuicss-skincodecss" rel="stylesheet" href="static/css/iconfont.css" media="all">
+    
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+
+    <script src="static/js/vue.min.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?11ae0484f69e1fd601e5e382c35bdc1b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <style type="text/css">@keyframes move { 0% {background-position: 0 0;} 100% { background-position: -300px 0; } } .wrap {}</style>
+
+    <style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style>
+    
+    <style type="text/css">
+	   body{background-color: #e6e7ee;}
+	   .rj_card{
+	      border:1px solid #d1d9e6;
+          border-radius: 8px !important;
+          box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+          color: #31344b;
+          background-color: #e6e7ee;
+          border-color: #d1d9e6;
+	   }
+	   .rj_card2 {
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(221, 221, 221,0.5);
+    background-color: #fff;
+}
+
+
+         .rj_card3 {
+		    margin:0 15px;
+            border:1px solid #000;
+			display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: flex-start; padding:10px;
+         }
+		 .rj_gg { 
+		     color:#FF0000; width:calc(100% - 30px); padding-left:10px; ine-height:24px; 
+         }
+		 .rj_icon { 
+		    width:20px; 
+		   
+         }
+		 .rj_icon .iconfont {
+              color: #ff0000; font-size:24px; line-height:24px;   
+         }
+	   
+	  /* .rj-content{ background:none;}
+	   .rj-content p, .rj-content section{  background-color:#e6e7ee  !important;}
+	   .rj-content span{  background-color:#e6e7ee  !important;}*/
+	  
+	  .dw-list{display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: flex-start;}
+      .dw-list .dw-item{margin-right:16px; padding:16px 0; border-radius: 10px; background-color: rgb(7, 193, 96); color: rgb(255, 255, 255); font-size: 16px; justify-content: center; display: flex; align-items: center; text-align:center; box-shadow: rgba(184, 185, 190, 0.59) 6px 6px 12px, rgba(255, 255, 255, 0.62) -6px -6px 12px; border: 1px solid rgb(209, 217, 230);}
+	
+	   		  .dw-list .dw-item{width:calc((100% - 40px) / 3);}
+		 	  .dw-list .dw-item:last-child{margin-right:0;}
+	  .rj-content{word-wrap: break-word;}
+	  .ipa-detail{display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: flex-start;}
+      .ipa-detail .ipa-item{
+	     opacity: 1;
+         background: #b1b1b726;
+         padding: 10px 0;
+         color: rgb(65 71 84);
+         text-shadow: #00000042 5px 3px 3px;
+         box-shadow: rgb(184, 185, 190) 2px 2px 5px inset, rgb(255, 255, 255) -3px -3px 7px inset;
+		 display: flex; 
+		 font-size:14px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 30%; 
+		 margin:20px 1.5%;;
+         border-radius: 10px;
+		 }
+		 .ipa-detail .ipa-item .iconfont {
+            font-size: 24px;
+         }
+		 .ipa-detail .ipa-item:nth-child(1) .iconfont {
+              color: #ff8c19;
+         }
+		 .ipa-detail .ipa-item:nth-child(6) .iconfont {
+              color: #ffcc14;
+         }
+		 
+   </style>
+   <script type="text/javascript" src="static/js/ey_global.js"></script>
+</head>
+
+  
+
+  <body ontouchstart="">
+       <div id="app" class="container">
+
+      <div class="rj-my-top">
+
+        <div style="width: 10%;">
+
+          <a href="javascript:;" onclick="javascript :history.back(-1);">
+
+            <img src="static/picture/icon_back.png" style="width: 30px;"></a>
+
+        </div>
+
+        <div style="font-size: 16px;">TrollFools （插件注入）</div>
+
+        <div style="width: 10%;">
+
+          <a href="index.html">
+
+            <img src="static/picture/icon_home.png" style="width: 30px;"></a>
+
+        </div>
+
+      </div>
+
+      <div class="rj_card">
+
+        <div style="display: flex; padding: 15px;">
+
+          <div style="width: 20%;">
+
+            <img src="static/picture/1-240H612520V29.jpg" style="width: 100%;"></div>
+
+          <div style="width: 80%; padding-left: 20px;">
+
+            <div style="font-size: 20px; font-weight: 400;">TrollFools （插件注入）</div>
+
+            <div style="display: flex; justify-content: space-between;">
+
+              <div style="color: rgb(153, 153, 153); font-size: 10px; font-weight: 400; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+
+			  系统：ios 丨 版本：2.8.15</div>
+
+              <div style="color: rgb(255, 0, 0); font-size: 10px; font-weight: 400; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+
+			  更新于：2024-11-20</div></div>
+
+          </div>
+
+        </div>
+
+        <div style="padding: 0px 15px 15px;" class="dw-list">
+           <a href="" class="dw-item"><div>点UC或迅雷下载 </div></a>
+                             <a href="https://lin.mrlin.vip/index.php?m=home&amp;c=View&amp;a=index&amp;aid=2060&amp;admin_id=1" class="dw-item"><div>下载通道一</div></a>
+                             <a href="https://drive.uc.cn/s/341cb8d3cfd94" class="dw-item"><div>UC网盘</div></a>
+               
+              </div>
+              
+              <div class="ipa-detail">
+                   <div class="ipa-item"><i class="iconfont icon-star-fill"></i>5.0</div>
+                   <div class="ipa-item"><i class="iconfont icon-integral1"></i>5.2MB</div>
+                   <div class="ipa-item"><i class="iconfont icon-earth"></i>无广</div>
+                   <div class="ipa-item"><i class="iconfont icon-apple-fill"></i></div>
+                   <div class="ipa-item"><i class="iconfont icon-tishi"></i>2.8.15</div>
+                   <div class="ipa-item"><i class="iconfont icon-tanhao1"></i>巨魔专用</div>                     
+              </div>
+
+      </div>
+      
+      <div class="rj_card3" style="padding:5px;">
+         <div class="rj_icon"><i class="iconfont icon-tanhao1"></i></div>
+         <div class="rj_gg"><marquee behavior="scroll" direction="left">本站所有资源均收集于网络！标注了自签版需要自行证书签名或者巨魔安装-商店版发稿之前测试都已注明有无内购和广告，或者其他特别说明，后续不知自行测试，商店版应用都是随时下架，手慢无，时间有限无法做到实时同步更新</marquee>   </div>
+      </div>
+      
+
+      <div class="rj_card2" style="padding: 10px;">
+
+        <div style="border-bottom: 1px solid rgb(153, 153, 153); font-size: 17px; padding-bottom: 5px; margin-bottom: 5px;">应用介绍</div>
+
+        <div class="rj-content">
+
+        <p style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-size: 17px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 14px;">最新发布的神器，也是巨魔专用，没有安装巨魔的是用不了的&nbsp; 还没安装巨魔的 可以看这里教程&nbsp;&nbsp;<a href="index-home_View_index_1679.html" target="_self" style="text-decoration: underline; margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgb(255, 0, 0); font-size: 18px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgb(255, 0, 0); font-size: 18px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong>巨魔安装教程</strong></span></a></span></p><p style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-size: 17px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br></p><p style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-size: 17px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br></p><p>完全免费支持注入dylib动态库到AppStore应用支持列表应用搜索功能支持删除单个dylib动态库支持一键推出所有dylib动态库支持筛选已注入应用</p><p><br></p><p style="margin-top: 0px; margin-bottom: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 17px; line-height: normal; font-family: &quot;.SF UI&quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-variant-emoji: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal; -webkit-text-stroke-width: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: &quot;.SFUI-Bold&quot;; font-weight: bold; font-kerning: none; color: rgb(0, 0, 0);">支持注入的软件有</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; font-size: 17px; line-height: normal; font-family: &quot;.SF UI&quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-variant-emoji: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal; -webkit-text-stroke-width: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><span style="font-family: &quot;.SFUI-Bold&quot;; font-weight: bold; font-kerning: none; color: rgb(0, 0, 0);"><br></span></p><ul class=" list-paddingleft-2"><li><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; background-color: rgb(255, 255, 255); -webkit-text-stroke-color: rgb(31, 35, 40);"></span><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; font-kerning: none; background-color: rgb(255, 255, 255);">AppStore应用</span><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; font-kerning: none;"><br></span><span style="font-family: &quot;.SFUI-Regular&quot;; font-size: 16px; font-kerning: none; color: rgb(31, 35, 40); -webkit-text-stroke-color: rgb(31, 35, 40);"><br></span></span></li><li><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; background-color: rgb(255, 255, 255);"></span><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; font-kerning: none; background-color: rgb(255, 255, 255);">巨魔安装应用</span><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; font-kerning: none;"><br></span><span style="font-family: &quot;.SFUI-Regular&quot;; font-size: 16px; font-kerning: none; color: rgb(31, 35, 40); -webkit-text-stroke-color: rgb(31, 35, 40);"><br></span></span></li><li><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; background-color: rgb(255, 255, 255);"></span><span style="color: rgb(0, 0, 0); font-family: &quot;.SFUI-Regular&quot;; font-kerning: none; background-color: rgb(255, 255, 255);">系统自带应用</span><span style="font-family: &quot;.SFUI-Regular&quot;; font-size: 16px; font-kerning: none; color: rgb(31, 35, 40); -webkit-text-stroke-color: rgb(31, 35, 40);"><br></span></span></li></ul><p><br></p><section style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-size: 17px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); font-family: -apple-system-font, system-ui, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></section><section data-mpa-template="t" mpa-from-tpl="t" style="margin: 0px 0px 24px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); caret-color: rgba(0, 0, 0, 0.9); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><section data-style="padding-top: 8px; padding-right: 16px; padding-left: 16px;padding-bottom: 8px; max-width: 100%; background-color: rgb(248, 248, 250); color: rgb(63, 64, 70); font-size: 14px; font-weight: 600; line-height: 1.75; word-break: break-all; border-radius: 10px; overflow-wrap: break-word !important; box-sizing: border-box !important;" class="js_darkmode__0" mpa-from-tpl="t" data-mpa-powered-by="iospocket" style="margin: 0px; padding: 10px 16px 8px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; background-color: rgb(247, 247, 247); font-weight: 600; line-height: 1.75; word-break: break-all; border-radius: 10px; visibility: visible;"><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-size: 14px; color: rgb(63, 64, 70); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></p><ul class=" list-paddingleft-2" mpa-from-tpl="t" style="padding: 0px 0px 0px 1.5em; outline: 0px; max-width: 100%; width: 545.453px; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><li><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">TrollFools是什么，有什么用</span></li></ul><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></span></p><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">TrollFoos，一款不需要越狱，只需要巨魔环境下，就可以注入，支持 iOS 14-17 系统的有巨魔2设备，TrollFools ，适合那种使用App Store下载应用但是没有越狱得同学，不想越狱但是想自己给App Store下载的应用注入个性插件的，这是一个很好的解决方案，目前支持的app很多，请自行测试。</span><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></span></p><ul class=" list-paddingleft-2" mpa-from-tpl="t" style="padding: 0px 0px 0px 1.5em; outline: 0px; max-width: 100%; width: 545.453px; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><li><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">目前作者已经更新到2.4.1 在新的版本中，作者完善了一些动画细节，并且修复「计算器」、「邮件」等 App的修补支持，也为目标二进制添加修补 LC_RPATH</span></li></ul><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></span></p><ul class=" list-paddingleft-2" mpa-from-tpl="t" style="padding: 0px 0px 0px 1.5em; outline: 0px; max-width: 100%; width: 545.453px; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><li><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 14px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">注入有什么用？</span></li></ul><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></p><ul class=" list-paddingleft-2" mpa-from-tpl="t" style="padding: 0px 0px 0px 1.5em; outline: 0px; max-width: 100%; width: 545.453px; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><li><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 12px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">注入的插件，可以实现APP增强或者多加新功能，等等，比如大家最讨厌app广子，就可以注入去广插件，实现让App无关模式，还你纯净模式，再简单说，手机自带的计算器，是无法看历史计算记录，使用注入插件就可以实现，下面再实际操作，&nbsp;<span style="font-size: 12px; margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgb(250, 83, 89);">非常简单一看就会只要是已经安装巨魔的就</span>行</span></li></ul></section></section><p><br></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; text-wrap: wrap; background-color: rgb(255, 255, 255); letter-spacing: 0px; caret-color: rgba(0, 0, 0, 0.9); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-align: center; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></p><p><br></p><section style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); caret-color: rgba(0, 0, 0, 0.9); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;"><section style="margin: 0px 0px 24px; padding: 0px; outline: 0px; max-width: 100%; text-align: justify; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.408px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 8px 30px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; border-radius: 24px; background: rgb(247, 247, 247); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0.19) 0px 1px 2px 0px;"><p data-mid="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: PingFangSC-Regular, &quot;PingFang SC&quot;; line-height: 22px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-weight: 700; font-size: 20px; color: rgb(0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;">下载TrollFools IPA和插件</span></p></section></section></section></section></section><p><br></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.544px; color: rgb(0, 0, 0);">点击上面迅雷网盘进入</span><span style="color: rgb(250, 83, 89); font-size: 15px; font-weight: 700; letter-spacing: 0.544px;">-巨魔专区-TrollFools ＋插件包即可下载</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;">或者在官网下载也可以：<span style="font-size: 15px; letter-spacing: 0.544px;">TrollFools 官方网站：</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 15px; letter-spacing: 0.544px;"><a href="https://github.com/Lessica/TrollFools" _src="https://github.com/Lessica/TrollFools">https://github.com/Lessica/TrollFools</a></span></strong></p><hr><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="letter-spacing: 0.544px;"><br></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="letter-spacing: 0.544px;">V2.8.15更新内容</span><strong style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></strong></p><p><span style="text-wrap: nowrap;">从共享表中接收.dylib文件，并将其注入到指定的应用程序中。</span></p><p><span style="text-wrap: nowrap;">错误修复</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">避免在盒子里重命名文档。</span></p><p><span style="text-wrap: nowrap;">删除广告并防止应用程序崩溃。</span></p><hr><p><span style="text-wrap: nowrap;">&nbsp; &nbsp;</span></p><p><span style="text-wrap: nowrap;">&nbsp; &nbsp; V2.7.10更新内容</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">新功能：新增长按APP选单【清除缓存】</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">替换掉SwiftUI原生搜索框，解决部分设备粗体文本崩溃 (无解)</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">其他变化：</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">修复隔空投送deb文件时软件不显示问题</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">修复部分设备出现未捕获错误问题</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">优化文件共享判断</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">优化iOS14搜索框与分类排版出错</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">优化搜索框与分类对齐</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br></p><hr><p><span style="text-wrap: nowrap;">&nbsp;&nbsp;</span></p><p><span style="text-wrap: nowrap;">&nbsp;V2.7-9更新内容</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">新功能：调整权限：将所有软件所生成的文件统一并入沙盒目录</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">左上角按钮新增：清除缓存项（一键清空所有软件产生的临时文件）</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">支持文件导入及AirDrop直接注入：导入(dylib,deb)文件后会看到一个弹窗，选择&quot;注入&quot;后点击任一软件直接注入</span></p><p><span style="text-wrap: nowrap;">新增了一个URLScheme可供快捷跳转【TFools://】</span></p><hr><p><br></p><p><br></p><p><span style="text-wrap: nowrap;">&nbsp; &nbsp; V2.7更新内容</span></p><p><span style="text-wrap: nowrap;"><br></span></p><p><span style="text-wrap: nowrap;">新增功能：添加分类功能（全部、用户、巨魔、系统）应用程序</span></p><p><span style="text-wrap: nowrap;">支持手势切换选择（左右滑动）</span></p><p><br></p><p><span style="text-wrap: nowrap;">改进功能：添加了iOS14搜索框（之前忘记）</span></p><p><br></p><p><span style="text-wrap: nowrap;">其他变化：优化排序图标为圆形</span></p><hr><p><span style="text-wrap: nowrap;"></span><br></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; letter-spacing: 0.544px; color: rgba(0, 0, 0, 0.9); font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); box-sizing: border-box !important; overflow-wrap: break-word !important;"></span></strong><br></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; text-wrap: wrap; background-color: rgb(255, 255, 255); letter-spacing: 0px; caret-color: rgba(0, 0, 0, 0.9); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-align: center; visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></p><p><br></p><section style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); caret-color: rgba(0, 0, 0, 0.9); -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box !important; overflow-wrap: break-word !important;"><section style="margin: 0px 0px 24px; padding: 0px; outline: 0px; max-width: 100%; text-align: justify; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.408px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;"><section data-mid="" mpa-from-tpl="t" style="margin: 0px; padding: 8px 30px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; border-radius: 24px; background: rgb(247, 247, 247); box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px, rgba(0, 0, 0, 0.19) 0px 1px 2px 0px;"><p data-mid="" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: PingFangSC-Regular, &quot;PingFang SC&quot;; line-height: 22px; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-weight: 700; box-sizing: border-box !important; overflow-wrap: break-word !important;">&nbsp;</span><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 20px;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-weight: 700;">实际</span><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-weight: 700;">操作教程</span></span></p></section></section></section></section></section><p><br></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 14px;">上面网盘里面下载TrollFools 安装包，保存到自己网盘，然后打开自己网盘，点击下载，然后选择其他应用打开，选择TrollStore巨魔打开&nbsp;</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 14px;"><img src="static/picture/1-240H612552KW.png" title="" alt="1.png"></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgb(34, 34, 34); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); box-sizing: border-box !important; overflow-wrap: break-word !important;">点击lnstall，即可导入成功桌面就自动就有了，然后点击TrollFools，选择open，也可以再桌面点击打开</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgb(34, 34, 34); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); box-sizing: border-box !important; overflow-wrap: break-word !important;"><img src="static/picture/1-240H61255541L.png" title="" alt="2.png"></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><br></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; color: rgb(34, 34, 34); font-size: 14px;">打开TrollFools就可以看到已经安装的应用的，</span><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; color: rgb(51, 51, 51); font-size: 14px; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.034em;">主界面是应用列表，支持搜索。找到想注入的应用，点击进入，</span><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 14px; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.034em; color: rgb(250, 83, 89); font-weight: bold;">就以计算机为列 &nbsp;</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 14px; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; letter-spacing: 0.034em; color: rgb(250, 83, 89); font-weight: bold;"><br></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-size: 15px; letter-spacing: 0.544px; box-sizing: border-box !important; overflow-wrap: break-word !important;">注意：<strong style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;">deb格式不被支持哦！只支持注入</strong>dylib格式的插件，dylib</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important; font-size: 15px; letter-spacing: 0.544px;"><br style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; box-sizing: border-box !important; overflow-wrap: break-word !important;"></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="font-size: 15px; margin: 0px; padding: 0px; outline: 0px; max-width: 100%; letter-spacing: 0.544px; box-sizing: border-box !important; overflow-wrap: break-word !important;">dylib插件保存自己网盘，然后下载，点击，其他应用打开，保存到文件</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><img src="static/picture/1-240H6125J0V0.png" title="" alt="3.png"></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; outline: 0px; max-width: 100%; color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); box-sizing: border-box !important; overflow-wrap: break-word !important;">保存到文件后，打开TrollFools，首页搜索计算器，点击，选择注入</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><img src="static/picture/1-240H6125JY58.png" title="" alt="4.png"></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="color: rgb(34, 34, 34); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255);">找到我们保存到文件的对应插件，勾选，然后右上角打开即可，等待注入完成即可</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="color: rgb(34, 34, 34); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255);"><img src="static/picture/1-240H6125S2U5.png" title="" alt="5.png"></span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255);">打开我们的计算器，计算，是不是和平时的不一样了，还有左上角可以查看历史计算记录，</span><span style="color: rgb(47, 118, 195); margin: 0px; padding: 0px; outline: 0px; max-width: 100%; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); box-sizing: border-box !important; overflow-wrap: break-word !important;">这只是随便举例一个</span><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255);">，如果你要删除注入的插件点击推出即可，可以批量推出也可以只删除某个插件，</span><span style="font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255); color: rgb(250, 83, 89);">上面网盘里面收集了很多插件</span><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255);">，就不介绍了，你们懂的，都是好东西，还要啥越狱呀，一个TrollFools就搞定了 YYDS，本文非常详细了，给个赞吧， 不允许还有人不会 真的非常简单</span></p><p style="margin: 0px 16px 16px; padding: 0px; outline: 0px; max-width: 100%; clear: both; min-height: 1em; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 17px; letter-spacing: 0.544px; text-wrap: wrap; background-color: rgb(255, 255, 255); visibility: visible; color: rgb(34, 34, 34); box-sizing: border-box !important; overflow-wrap: break-word !important;"><span style="color: rgba(0, 0, 0, 0.9); font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px; letter-spacing: 0.544px; text-align: justify; text-wrap: wrap; background-color: rgb(255, 255, 255);"><img src="static/picture/1-240H6125T33W.png" title="" alt="6.png"></span></p>
+
+
+		  
+
+		  
+
+        </div>
+
+      </div>
+
+      <div style="height: 10px;"></div>
+
+      <div class="rj-copyright">
+
+        <div id="audio" class="cywl">
+
+          <img src="static/picture/cywl1.gif" width="65px" height="65px" id="d" onclick="c();">
+
+          <img src="static/picture/cywl1.gif" width="65px" height="65px" id="d" onclick="c();"></div>
+
+        <center>
+
+          <span style="color: black;">
+
+            <div class="wrap">
+
+			
+
+			
+
+		本站所有资源收集整理于网络,本站不参与制作与开发,用于互联网爱好者学习和研究,如不慎侵犯了您的权利,请及时联系站长处理删除。敬请谅解！ 侵权删帖/联系邮箱linxiucheng0817@163.com
+			  
+
+			  </div>
+
+          </span>
+
+        </center>
+
+        <p>
+
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow"></a>
+
+        </p>
+
+      </div>
+
+	  
+
+	  
+
+    <!--  <div class="rj-tabbar">
+
+        <a href="/">
+
+          <div class="rj-foot-img">
+
+            <img src="data/uploadfile/ivapp/20220522154632660.png">
+
+            <img src="data/uploadfile/ivapp/20220522154636984.png" style="display: none;"></div>
+
+          <p class="rj_tabbar_label">首页</p></a>
+
+        <a href="/">
+
+          <div class="rj-foot-img">
+
+            <img src="data/uploadfile/ivapp/20220522154856372.png">
+
+            <img src="data/uploadfile/ivapp/20220514010604576.png" style="display: none;"></div>
+
+          <p class="rj_tabbar_label">越狱</p></a>
+
+        <a href="/">
+
+          <div class="rj-foot-img">
+
+            <img src="data/uploadfile/ivapp/20220522154459338.png" style="display: none;">
+
+            <img src="data/uploadfile/ivapp/20220522154455853.png" style=""></div>
+
+          <p class="rj_tabbar_label">苹果</p></a>
+
+        <a href="/">
+
+          <div class="rj-foot-img">
+
+            <img src="data/uploadfile/ivapp/20220522155000230.png">
+
+            <img src="data/uploadfile/ivapp/20220514003715197.png" style="display: none;"></div>
+
+          <p class="rj_tabbar_label">安卓</p></a>
+
+        <a href="/">
+
+          <div class="rj-foot-img">
+
+            <img src="data/uploadfile/ivapp/20220522155206987.png">
+
+            <img src="data/uploadfile/ivapp/20220522155209555.png" style="display: none;"></div>
+
+          <p class="rj_tabbar_label">电脑</p></a>
+
+      </div>--> 
+
+	  
+
+	  
+
+    </div>
+    <style>.rj_title{padding: 20px 15px 10px;text-align: left; font-size: 20px; font-weight: 400;} .rj_author{padding:0 15px 10px;color: rgba(0,0,0,0.3);} a{color:#888;}</style>
+      
+  <link rel="stylesheet" type="text/css" href="static/css/privacy.css">
+  <div class="privacy-main">
+      <div class="privacy-main-title">网站公告</div>
+      <div class="privacy-main-img"><img src="static/picture/1-240919232632628.jpg"></div>
+      <div class="privacy-main-content">
+        <div class="privacy-main-tit">网站每日IP已突破三千，感谢大家支持，每日坚持更新，商店版APP都是手慢无，没时间实时同步，需要流量卡首页免费领取，套餐线下营业厅，线上官方APP，均可查</div>
+         <span class="privacy-bth">确定</span>
+      </div>
+  </div>
+<div id="privacy-mask"></div>
+<script>
+  $(".privacy-bth").click(function(){
+       const url='/index.php?m=home&c=lists&a=Privacy';
+	   $.ajax({
+			// async:false,
+			url: url,
+			data: {name:'ok'},
+			type: 'post',
+			dataType: 'json',
+			success: function (response) {
+				console.log(response);
+				var res = response.data;
+				if (res.status == 2) {
+			      $(".privacy-main").css('display','none');
+	              $("#privacy-mask").css('display','none');
+				} 
+			},
+			error: function () {
+				console.log(1);
+			}
+		});
+    }) 
+</script>
+			
+      <script src="static/js/fireworks.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5d2a7826a809ecf3f037c7fb9f628321";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript">var root_dir="";var ey_u_switch=1;var ey_aid=2310;</script>
+<script language="javascript" type="text/javascript" src="static/js/ey_footer.js"></script>
+</body>
+
+
+
+</html>
