@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>林先生在线工具箱 - 非常Nice的在线工具网</title>
+    <meta name="keywords" content="工具,源码查看器原创,在线,工具">
+    <meta name="description" content="这是一个非常Nice的在线工具箱">
+    <link rel="stylesheet" href="static/css/dashlite.css">
+	<link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body class="nk-body npc-invest bg-lighter ">
+    <!-- wrap @s -->
+    <div class="nk-wrap ">
+        <!-- main header @s -->
+<div class="nk-header nk-header-fluid nk-header-fixed is-light">
+    <div class="container-xl">
+        <div class="nk-header-wrap link-between">
+            <div class="nk-menu-trigger mr-sm-2 d-lg-none">
+                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-menu"></em></a>
+            </div>
+            <div class="nk-header-brand">
+                <a href="index2.html" class="logo-link text-base"><img src="static/picture/logo.png" class="hide-mb-sm">林先生在线工具箱</a>
+            </div>
+            <!-- .nk-header-brand -->
+            <div class="nk-header-tools nk-header-menu" data-content="headerNav">
+                <div class="nk-header-mobile">
+                    <div class="nk-header-brand">
+                        <a href="index2.html" class="logo-link text-base">
+                            <span class="nio-version" style="font-size: 21px;position: inherit;">林先生在线工具箱</span>
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div>
+                <!-- Menu -->
+                <ul class="nk-menu nk-menu-main">
+                    <li class="nk-menu-item ">
+                        <a href="index2.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-home"></em>
+                            <span class="nk-menu-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item ">
+                        <a href="stars.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-heart"></em>
+                            <span class="nk-menu-text">我的收藏</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item active">
+                        <a href="" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-comments"></em>
+                            <span class="nk-menu-text">留言反馈</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- .nk-header-menu -->
+            <div class="no-gutters">
+                <ul class="nk-quick-nav">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="progress-rating dark-switch ">
+                            <span class="nk-menu-icon">
+                                <em class="icon ni ni-moon"></em>
+                                <em class="icon ni ni-sun d-none"></em>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown user-dropdown order-sm-first ">
+                                                <a href="login.html" class="dropdown-toggle nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-user-circle mr-1"></em>
+                            <div class="">
+                                未登录
+                            </div>
+                        </a>
+                                            </li>
+                    <!-- .dropdown -->
+                </ul>
+                <!-- .nk-quick-nav -->
+            </div>
+            <!-- .nk-header-tools -->
+        </div>
+        <!-- .nk-header-wrap -->
+    </div>
+    <!-- .container-fliud -->
+</div>
+<!-- main header @e -->
+        <!-- content @s -->
+        
+<div class="nk-content nk-content-lg nk-content-fluid">
+    <div class="container-xl">
+        <div class="nk-content-body">
+            <div class="card card-preview">
+                <div class="card-header border-bottom bg-white">
+                    <div class="d-flex">
+                        <div class="user-avatar bg-info mr-3">
+                            <img src="static/picture/user.png">
+                        </div>
+                        <div class="fake-class">
+                            <h6 class="mt-0 d-flex align-center"><span><a href="login.html">登录</a>后才能发表留言</span></h6>
+                            <p class="text-soft">在使用工具遇到任何问题都可以在这里反馈哟！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    <form action="#" class="form is-alter" id="comment_form">
+                        <div class="row gy-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="content">留言内容</label>
+                                    <div class="form-control-wrap">
+                                        <textarea class="form-control" id="content" name="content" placeholder="请输入留言内容" rows="3" required=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">电子邮箱</label>
+                                    <div class="form-control-wrap">
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="请输入你的电子邮箱" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" id="submit_comment" class="btn btn-lg btn-primary" disabled>提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card card-preview">
+                <div class="card-header border-bottom bg-white">
+                    <h6>留言列表</h6>
+                </div>
+                <div class="card-inner">
+                    <div class="simplebar-content" style="padding: 0px;">
+                        <div id="commentlist"></div>
+                    </div>
+                    <div class="paging mt-3 mb-3">
+                        <nav>
+                            <ul class="pagination nk-header-right" id="page">
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- content @d -->
+        <div class="nk-footer nk-footer-fluid bg-lighter">
+    <div class="container-xl">
+        <div class="nk-footer-wrap">
+            <div class="nk-footer-copyright"> &copy; 2024 林先生在线工具箱 <br>本站由<a href="https://www.tiezhuwangluo.com">工具箱网</a>强力驱动            </div>
+        </div>
+    </div>
+</div>
+<!-- footer @e -->
+    </div>
+    <!-- wrap @e -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/layer.js"></script>
+<script src="static/js/nioapp.min.js"></script>
+<script src="static/js/script.js"></script>
+<script src="static/js/common.js"></script>
+
+<script src="static/js/gt.js"></script>
+<script>
+function get_page_html(page, pagenum, linum, func){
+    var html = '';
+    if(page<=1){
+        html += '<li class="page-item disabled"><a class="page-link">上一页</a></li>';
+    }else{
+        html += '<li class="page-item"><a class="page-link" href="javascript:'+func+'('+(page-1)+')">上一页</a></li>';
+    }
+    var num = Math.floor(linum/2);
+    var start=page-num>1?page-num:1;
+    var end=page+num<pagenum?page+num:pagenum;
+    for (var i=start;i<page;i++){
+        html += '<li class="page-item"><a class="page-link" href="javascript:'+func+'('+i+')">'+i+'</a></li>';
+    }
+    html += '<li class="page-item active"><a class="page-link">'+page+'</a></li>';
+    for (var i=page+1;i<=end;i++){
+        html += '<li class="page-item"><a class="page-link" href="javascript:'+func+'('+i+')">'+i+'</a></li>';
+    }
+    if(page>=pagenum){
+        html += '<li class="page-item disabled"><a class="page-link">下一页</a></li>';
+    }else{
+        html += '<li class="page-item"><a class="page-link" href="javascript:'+func+'('+(page+1)+')">下一页</a></li>';
+    }
+    return html;
+}
+var handlerEmbed = function (captchaObj) {
+    var content,email;
+	captchaObj.onReady(function () {
+		$("#wait").hide();
+	}).onSuccess(function () {
+		var result = captchaObj.getValidate();
+		if (!result) {
+			return alert('请完成验证');
+		}
+        httpPost("/comment/do/add", {content:content,email:email,geetest_challenge:result.geetest_challenge,geetest_validate:result.geetest_validate,geetest_seccode:result.geetest_seccode}, function(data){
+            if(data.status == 'ok'){
+                layer.alert('发表留言成功！', {icon:1}, function(){ show_comment_list();layer.closeAll() });
+            }else{
+                layer.alert(data.message, {icon:7});
+                captchaObj.reset();
+            }
+        }, true)
+	});
+	$('#comment_form').submit(function () {
+        content = $("#content").val().trim();
+        email = $("#email").val().trim();
+        if(content == '' || email == ''){
+            layer.alert('请确保各项不能为空');return false;
+        }
+        if(content.length < 3){
+            layer.alert('留言内容太短，请修改后提交');return false;
+        }
+        var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+		if(!reg.test(email)){
+            layer.alert('邮箱格式不正确！');return false;
+        }
+		captchaObj.verify();
+        return false;
+	});
+};
+function show_comment_list(page){
+    page = page || 1;
+    httpGet('/comment/do/list?page='+page, function(data){
+        var html = '';
+        if(data.items.length > 0){
+            $.each(data.items, function(index,value){
+                var reply = '';
+                if(value.reply!=null && value.reply!=''){
+                    reply = `<div class="nk-reply-entry entry note p-2">
+                                    <p>管理员回复：${value.reply}</p>
+                                </div>`
+                }
+                if(!value.enable) value.content += ` <font color="orange">（待审核）</font>`;
+                html += `<div class="nk-reply-item">
+                            <div class="nk-reply-header">
+                                <div class="user-card">
+                                    <div class="user-avatar sm bg-purple">
+                                        <img src="${value.avatar_url}">
+                                    </div>
+                                    <div class="user-name">${value.username}</div>
+                                </div>
+                                <div class="date-time">${value.time}</div>
+                            </div>
+                            <div class="nk-reply-body">
+                                <p>${value.content}</p>
+                                ${reply}
+                            </div>
+                        </div>`
+            })
+        }else{
+            html += `<p class="search-placeholder">暂无留言</p>`
+        }
+        $("#commentlist").html(html);
+        var page = get_page_html(data.page, data.pagenum, 7, 'show_comment_list');
+        $("#page").html(page);
+    })
+}
+$(document).ready(function(){
+    show_comment_list();
+});
+</script>
+
+</body>
+</html>

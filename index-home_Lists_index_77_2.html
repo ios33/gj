@@ -1,0 +1,1390 @@
+
+<html>
+<html class="ios device-pixel-ratio-1 device-desktop support-position-sticky">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="robots" content="noindex">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?11ae0484f69e1fd601e5e382c35bdc1b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>    <style>
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: none;
+        
+    }
+    .mask img {
+        width: 280px;
+        height: 150px;
+        margin: 30px;
+        float: 20px;
+    }
+    .search_form{
+        width:100%;
+        height:42px;
+        background: #f7f3ef;
+    }
+
+    /*左边输入框设置样式*/
+    input[type=text].input_text{
+        width:75%;
+        height: 40px;
+        /* border:1px solid green;*/
+        /*清除掉默认的padding*/
+        padding:0px;
+        background: rgba(255,255,255,0.2);
+		webkit-text-fill-color: #4c4c4ccc;
+        box-shadow: inset 6px 5px 5px #e1e1e1, inset -5px -5px 5px #fff;
+        /*提示字首行缩进*/
+        text-indent: 20px;
+
+        /*去掉蓝色高亮框*/
+        outline: none;
+
+        /*用浮动解决内联元素错位及小间距的问题*/
+        float:left;
+    }
+
+    .input_sub{
+        width:25%;
+        height: 42px;
+        background: #9fcd84;
+        
+        /*去掉submit按钮默认边框*/
+        border:0px;
+        /*改成右浮动也是可以的*/
+        float:left;
+        color:white;/*搜索的字体颜色为白色*/
+        font-size:100%;
+        text-align: center;
+        cursor:pointer;/*鼠标变为小手*/
+    }
+	.cate-f{display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: center; align-items: center;}
+	.cate-f .cate-fimg{ width:25px; margin-right:7px;}
+	.cate-f .cate-fimg img{ width:25px;}
+	.categories .category .catbloc{ height:25px; line-height:25px;}
+    </style>
+    
+  
+<title>TestFlight-林先生苹果工具箱</title>
+<meta name="description" content="Testflight, Testflight邀请码">
+<meta name="keywords" content="Testflight, Testflight邀请码">
+
+    <!-- Enable the homescreen app on mobile devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Enable the App Icon -->
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+    <link rel="apple-touch-startup-image" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="static/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="static/css/icons.css">
+    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="stylesheet" href="static/css/common-1931s.css">
+    
+    <script id="LA_COLLECT" src="static/js/js-sdk-pro.min.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>    
+
+<script type="text/javascript" src="static/js/ey_global.js"></script>
+</head>
+
+<body>
+
+<div class="mask"><img src='static/picture/arrow.png'></div>
+     <div id="app" class="framework7-root">
+
+        <!-- Ambition-底部版权-->
+        <div class="views tabs safe-edges">
+
+            <div id="view-main-page" class="view view-main tab tab-active">
+                <div class="page page-current" data-name="home">
+                    <!---首页-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left" style="left: 20px;">
+                                <div class="refreshBtnDiv">
+                                    <span class="refreshText">Refreshing...
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="title sliding" style="left: 0px;">林先生苹果工具箱</div>
+              <div class="right" style="right: 10px;">
+                                    
+                                <font color="#888888">林先生</font>&nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewbox="0 0 847 1058.75" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
+                    </defs><g><path fill="#4cd964" d="M423 23c221,0 400,179 400,400 0,221 -179,400 -400,400 -221,0 -400,-179 -400,-400 0,-221 179,-400 400,-400zm-86 469l275 -275c13,-13 33,-13 45,0l36 35c12,13 12,33 0,45l-333 333c-13,12 -33,12 -45,0l-161 -161c-12,-12 -12,-32 0,-45l36 -35c12,-13 32,-13 45,0l102 103z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+<div class="page-content">
+                        <div class="page-body">
+                            			<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+  
+
+      .swiper {
+        width: 100%;
+        height: 120px;
+		    border-radius: 10px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+	  
+	          <div class="swiper-slide">
+		
+		   <a href='https://simhaoka.com/phone/index?id=54F506338E0F5AD2EE646BBA7B31DF44' target="_self"><img src='static/picture/1-240319231H0E3.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='https://lin.mads.vip/' target="_self"><img src='static/picture/1-23042F34621524.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='index-home_View_index_788.html' target="_self"><img src='static/picture/1-240320000Q43G.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='http://qpdau.yhzu.cn/' target="_self"><img src='static/picture/1-230414163425346.jpg' alt=''></a>
+		</div>
+             </div>
+    
+      
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="static/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <div style=" line-height: 40px;">
+     <marquee behavior="scroll" direction="left">
+       长期套可选号，正规的流量卡通用大流量，首页领取，套餐线上线下可查，不是物联卡，防止失联，一定要关注下公众号。各位且行且珍惜.更新不易.望善待    </marquee>
+                   </div>    
+                            
+                            <div class="page-section categories">
+                                <div class="collection">
+                                    <div class="row">
+									
+									
+									
+                                        <div class="col-33">
+                                            <a href="index.html" class="external item-link item-content">
+                                                <div class="category ">
+                                                    <div class="apps catbloc ">
+                                                        网站首页                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+
+                                        <div class="col-33">
+                                            <a href="index-home_Lists_index_97.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31T15B.png" alt="吃喝玩乐"></div><span>吃喝玩乐</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_70.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3092M38.png" alt="快捷指令"></div><span>快捷指令</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_92.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R30302529.png" alt="内购限免"></div><span>内购限免</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_71.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32034432.png" alt="实用软件"></div><span>实用软件</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_72.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31223357.png" alt="系统.巨魔"></div><span>系统.巨魔</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_76.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R33255W0.png" alt="观影神器"></div><span>观影神器</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_77.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc on">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32425228.png" alt="TestFlight"></div><span>TestFlight</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_78.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3133G34.png" alt="实用网站"></div><span>实用网站</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_85.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R25T0258.png" alt="小说音乐"></div><span>小说音乐</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_98.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-240924143T9364.png" alt="越狱工具"></div><span>越狱工具</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index2.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31543Q0.png" alt="在线工具"></div><span>在线工具</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_91.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R33112949.png" alt="共享账号"></div><span>共享账号</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_93.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32R1509.png" alt="留言投稿"></div><span>留言投稿</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_87.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3164GY.png" alt="友情链接"></div><span>友情链接</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                 
+                                       
+
+  <div class="search_form" style="margin-top: 5px;">   <form method='get' action='/index.php?m=home&c=Search&a=lists'>
+    <input type="hidden" name="m" value="home"><input type="hidden" name="c" value="Search"><input type="hidden" name="a" value="lists"><input type="hidden" name="method" value="1">    <input type="text" name='keywords' class="input_text" placeholder="关键词全网搜索">
+    <input type='submit' value="🔍搜索" class="input_sub">
+  </form>
+   </div>
+<div style="width: 100%;line-height: 40px;">
+  <marquee behavior="scroll" direction="left">
+  需要流量卡 自己领取  都是正规流量卡   公众号  林先生限免应用  </marquee>
+</div>
+  
+
+
+<style>
+    .r-text { 
+	    position:relative;
+    }
+	.r-text .category{width:calc(100% - 110px) !important; }
+   .app-sbth{ position:absolute; z-index:2; right:12px; top:50%; margin-top:-15px !important;}
+    </style>											
+								
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=1891">
+                                                <img src="static/picture/1-240430161U2316.jpeg" alt="壳-Aidoku漫画附书源">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>壳-Aidoku漫画附书源</span> <span class="title-tips">TF版</span>													
+													</div>
+                                                <div class="category">
+                                                    一款非常不错的漫画观看软件，最新TF上架，这款软件主要功能就是看漫画，自由度非常高，可添加源，功能非常全面												</div>
+                                                <div class="category">
+                                                    2024-8-3                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=1891">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=1891">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2341">
+                                                <img src="static/picture/1-240I1210P3427.jpeg" alt="荐音 ">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>荐音 </span> 													
+													</div>
+                                                <div class="category">
+                                                    一款非常高质量的免费听书软件，内置了丰富的有声资源，软件的UI界面和其他听书APP稍有不同，软件主页无任何分类或者推荐资源，除了一个搜索框之外，一片空白。播放调控一触即达。更备有多样播放模式与音效选择												</div>
+                                                <div class="category">
+                                                    2024-10-26                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2341">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2341">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2306">
+                                                <img src="static/picture/1-240H6003255344.jpeg" alt="今日头条专用版">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>今日头条专用版</span> 													
+													</div>
+                                                <div class="category">
+                                                    iOS商店版今日头条专业版已经下架2年了专业版和普通版的区别可能就是没有广告，需要的可以下载												</div>
+                                                <div class="category">
+                                                    2024-7-26                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2306">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2306">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2302">
+                                                <img src="static/picture/1-240H3132254543.jpeg" alt="抖音">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>抖音</span> 													
+													</div>
+                                                <div class="category">
+                                                    设备有该app会直接覆盖安装该版本使用上和正常App Store版本基本无差别只是在功能上进行了优化、修复了部分bug并在首页上增加了一反馈键												</div>
+                                                <div class="category">
+                                                    2024-7-23                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2302">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2302">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2301">
+                                                <img src="static/picture/1-240FG61205539.webp" alt="DNS广告去除.屏蔽广告">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>DNS广告去除.屏蔽广告</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款使用DNS过滤的方式去除广告，里面提供了非常多的服务器可以选择												</div>
+                                                <div class="category">
+                                                    2024-7-23                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2301">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2301">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2300">
+                                                <img src="static/picture/1-240R0194019326.jpeg" alt="X">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>X</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款看剧的内测应用												</div>
+                                                <div class="category">
+                                                    2024-7-23                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2300">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2300">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2269">
+                                                <img src="static/picture/1-240G11F216333.jpeg" alt="Lungy Sleep">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Lungy Sleep</span> 													
+													</div>
+                                                <div class="category">
+                                                    夜间放松的终极伴侣。我们的应用程序提供了一种平静的放松方式，通过引导呼吸练习来促进更好的睡眠，这些练习旨在舒缓你的大脑，让你的身体为休息做好准备												</div>
+                                                <div class="category">
+                                                    2024-7-11                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2269">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2269">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2221">
+                                                <img src="static/picture/1-240F5212404P2.webp" alt="ProxyPin">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>ProxyPin</span> 													
+													</div>
+                                                <div class="category">
+                                                    ProxyPin是一款开源免费的抓包工具，主要功能包括HTTP和HTTPS抓包，能够实时捕获并分析网络流量，支持TCP和UDP协议。用户可以通过手机扫码连接												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2221">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2221">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2220">
+                                                <img src="static/picture/1-240F5212234a4.webp" alt="Swiper">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Swiper</span> 													
+													</div>
+                                                <div class="category">
+                                                    是一款免费且注重隐私的相册管理工具，旨在帮助用户组织他们的相册、删除多余的图片并释放存储空间。用户只需向左滑动即可删除图片，向右滑动则保留图片												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2220">
+                                                    打开                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2220">
+                                                    打开                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2219">
+                                                <img src="static/picture/1-240F5212022638.webp" alt="串事成线">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>串事成线</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款由独立开发者Jiaolong开发的多项目时间线记录工具。该应用的主要功能是帮助用户以时间线的方式记录和跟踪多个项目												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2219">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2219">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2218">
+                                                <img src="static/picture/1-240F5211S3560.webp" alt="AnimeGen">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>AnimeGen</span> 													
+													</div>
+                                                <div class="category">
+                                                    一个用 Swift 编写的应用程序，旨在使用公共 API 来保存、生成和分享图像												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2218">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2218">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2217">
+                                                <img src="static/picture/1-240F5211632155.webp" alt="瓦尔登 - 日程管理">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>瓦尔登 - 日程管理</span> 													
+													</div>
+                                                <div class="category">
+                                                    瓦尔登是一款专为个人打造的日程管理应用，旨在帮助用户更好地实现自我管理，平衡工作与生活。该应用集成了多种功能，包括待办事项、目标进度管理、笔记备忘录等												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2217">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2217">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2216">
+                                                <img src="static/picture/1-240F5211233553.webp" alt="Jiiiii ">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Jiiiii </span> 													
+													</div>
+                                                <div class="category">
+                                                    Jiiiii 是一款专为动漫爱好者设计的应用程序，旨在帮助用户追踪和观看他们喜爱的动漫。该应用程序提供了多种功能，包括社交书签、在线学习、应用切换器等												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2216">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2216">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2215">
+                                                <img src="static/picture/1-240F521094Q61.webp" alt="BestTV">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>BestTV</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款专业的流媒体播放器，适用于iOS设备。该应用支持几乎所有流媒体协议以及大多数媒体格式。用户可以通过HTTP渐进式流、HTTP直播流（HLS）、RTMP - RTMPS - RTMPE等协议进行流畅的视频播放。												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2215">
+                                                    关注                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2215">
+                                                    关注                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2204">
+                                                <img src="static/picture/1-240F5195GI37.jpeg" alt="短信喵">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>短信喵</span> 													
+													</div>
+                                                <div class="category">
+                                                    短信喵是一款垃圾短信自动过滤拦截助手，旨在帮助用户远离垃圾短信的骚扰。该应用采用先进的智能AI算法												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2204">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2204">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2203">
+                                                <img src="static/picture/1-240F5195302163.jpeg" alt="酷狗音乐概念版">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>酷狗音乐概念版</span> 													
+													</div>
+                                                <div class="category">
+                                                    酷狗概念版是由酷狗音乐匠心出品的一款音乐播放软件。该应用主打清爽简约的UI界面，去除了许多用户使用较少的功能，保留了核心功能，提供极致的视听体验												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2203">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2203">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2194">
+                                                <img src="static/picture/1-240F3212545H0.jpeg" alt="小鹿播放器">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>小鹿播放器</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款自定义播放器，TF版名额满了，可以再商店下，都是纯净无广的												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2194">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2194">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2192">
+                                                <img src="static/picture/1-240F3210450O4.jpeg" alt="双双阅读">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>双双阅读</span> 													
+													</div>
+                                                <div class="category">
+                                                    原无双阅读下架一年之久，重新回归 上架TestFlight  改名双双阅读，纯净无广多源切换，可听书，缓存，翻页模式，字号，背景，语音等等
+
+												</div>
+                                                <div class="category">
+                                                    2024-7-5                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2192">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2192">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2186">
+                                                <img src="static/picture/1-240F11A049225.jpeg" alt="西游·小小无双">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>西游·小小无双</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款内测的游戏												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2186">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2186">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2170">
+                                                <img src="static/picture/1-24062G64624258.jpeg" alt="爱应用">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>爱应用</span> 													
+													</div>
+                                                <div class="category">
+                                                    iAppStore 一款使用 SwiftUI 打造的苹果商店工具类 App。												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2170">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2170">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2167">
+                                                <img src="static/picture/1-240626142150F2.jpeg" alt="火影">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>火影</span> 													
+													</div>
+                                                <div class="category">
+                                                    一款内测版的火影游戏，越南服的游戏，进入就可以领取VIP9，几万金币还有好多招募卷，让我一个平民玩家也可以体会到氪金大佬的感觉。												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2167">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2167">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2165">
+                                                <img src="static/picture/1-2406241KZ4C5.jpeg" alt="拦截猫">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>拦截猫</span> 													
+													</div>
+                                                <div class="category">
+                                                    熊猫吃短信」使用 Core ML机器学习框架在设备端离线过滤垃圾短信，能准确的通过语义识别垃圾短信，不需要手动配置任何过滤规则，开箱即用												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2165">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2165">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2152">
+                                                <img src="static/picture/1-240R0194019326.jpeg" alt="蛋播星球">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>蛋播星球</span> 													
+													</div>
+                                                <div class="category">
+                                                    打开重新进入即可，老用户都知道 之前经常上架TestFlight，就是平时发的伪装应用，只不过这个是在TestFlight上架												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2152">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2152">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2140">
+                                                <img src="static/picture/1-24061QU931334.jpeg" alt="读不舍手">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>读不舍手</span> 													
+													</div>
+                                                <div class="category">
+                                                    支持有效源检测及处理，小说索引覆盖广、内容全，拥有千万以上的小说资源，无需注册登录、无充值入口、无任何广告弹窗，支持一键搜索、一键换源、书籍缓存、切换字体、自动记忆阅读位置等功能												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2140">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2140">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="/index.php?m=home&c=View&a=index&aid=2139">
+                                                <img src="static/picture/1-24061G35JA23.jpeg" alt="熊猫吃短信2">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>熊猫吃短信2</span> 													
+													</div>
+                                                <div class="category">
+                                                    熊猫吃短信」使用 Core ML机器学习框架在设备端离线过滤垃圾短信，能准确的通过语义识别垃圾短信，不需要手动配置任何过滤规则，开箱即用												</div>
+                                                <div class="category">
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="/index.php?m=home&c=View&a=index&aid=2139">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2139">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+<style type="text/css">
+	
+div#pages {
+padding-right:8px;
+white-space: nowrap;
+margin: 8px auto;
+}
+
+div#pages ul{
+margin:0;
+padding:0;
+
+}
+
+div#pages a:link,div#pages a:visited,div#pages a:active{
+color:#000;/*非当前页*/
+text-decoration: none;
+
+}
+
+div#pages a:hover{
+color:#25C01B;/*鼠标滑过*/
+text-decoration: none;
+
+}
+
+div#pages li{
+margin:3px;
+padding:8px 16px;
+list-style-type: none;
+float:left;
+border:1px #1D5124 solid;/*边框颜色*/
+white-space: nowrap;
+
+}
+</style>
+<div id="pages"><ul> <li><a href="index-home_Lists_index_77.html" data-ey_fc35fdc="html" data-tmp="1">首页</a></li> <li><a href="index-home_Lists_index_77.html" data-ey_fc35fdc="html" data-tmp="1">上一页</a></li> <li><a href="/index.php?m=home&amp;c=Lists&amp;a=index&amp;tid=77&amp;page=3" data-ey_fc35fdc="html" data-tmp="1">下一页</a></li> <li><a href="index-home_Lists_index_77_8.html" data-ey_fc35fdc="html" data-tmp="1">末页</a></li></ul></div>
+                                      
+  <link rel="stylesheet" type="text/css" href="static/css/privacy.css">
+  <div class="privacy-main">
+      <div class="privacy-main-title">网站公告</div>
+      <div class="privacy-main-img"><img src="static/picture/1-240919232632628.jpg"></div>
+      <div class="privacy-main-content">
+        <div class="privacy-main-tit">网站每日IP已突破三千，感谢大家支持，每日坚持更新，商店版APP都是手慢无，没时间实时同步，需要流量卡首页免费领取，套餐线下营业厅，线上官方APP，均可查</div>
+         <span class="privacy-bth">确定</span>
+      </div>
+  </div>
+<div id="privacy-mask"></div>
+<script>
+  $(".privacy-bth").click(function(){
+       const url='/index.php?m=home&c=lists&a=Privacy';
+	   $.ajax({
+			// async:false,
+			url: url,
+			data: {name:'ok'},
+			type: 'post',
+			dataType: 'json',
+			success: function (response) {
+				console.log(response);
+				var res = response.data;
+				if (res.status == 2) {
+			      $(".privacy-main").css('display','none');
+	              $("#privacy-mask").css('display','none');
+				} 
+			},
+			error: function () {
+				console.log(1);
+			}
+		});
+    }) 
+</script>
+			
+
+<script src="static/js/fireworks.js"></script></div></div></div></div></div></div></div></div></div></body></html></html>

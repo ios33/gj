@@ -1,0 +1,1388 @@
+
+<html>
+<html class="ios device-pixel-ratio-1 device-desktop support-position-sticky">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="robots" content="noindex">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?11ae0484f69e1fd601e5e382c35bdc1b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>    <style>
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        color: #fff;
+        text-align: right;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        display: none;
+        
+    }
+    .mask img {
+        width: 280px;
+        height: 150px;
+        margin: 30px;
+        float: 20px;
+    }
+    .search_form{
+        width:100%;
+        height:42px;
+        background: #f7f3ef;
+    }
+
+    /*左边输入框设置样式*/
+    input[type=text].input_text{
+        width:75%;
+        height: 40px;
+        /* border:1px solid green;*/
+        /*清除掉默认的padding*/
+        padding:0px;
+        background: rgba(255,255,255,0.2);
+		webkit-text-fill-color: #4c4c4ccc;
+        box-shadow: inset 6px 5px 5px #e1e1e1, inset -5px -5px 5px #fff;
+        /*提示字首行缩进*/
+        text-indent: 20px;
+
+        /*去掉蓝色高亮框*/
+        outline: none;
+
+        /*用浮动解决内联元素错位及小间距的问题*/
+        float:left;
+    }
+
+    .input_sub{
+        width:25%;
+        height: 42px;
+        background: #9fcd84;
+        
+        /*去掉submit按钮默认边框*/
+        border:0px;
+        /*改成右浮动也是可以的*/
+        float:left;
+        color:white;/*搜索的字体颜色为白色*/
+        font-size:100%;
+        text-align: center;
+        cursor:pointer;/*鼠标变为小手*/
+    }
+	.cate-f{display: -webkit-box; display: -webkit-flex; display: flex; flex-wrap: wrap;  justify-content: center; align-items: center;}
+	.cate-f .cate-fimg{ width:25px; margin-right:7px;}
+	.cate-f .cate-fimg img{ width:25px;}
+	.categories .category .catbloc{ height:25px; line-height:25px;}
+    </style>
+    
+  
+<title>内购限免-林先生苹果工具箱</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+    <!-- Enable the homescreen app on mobile devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Enable the App Icon -->
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+    <link rel="apple-touch-startup-image" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="static/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="static/css/icons.css">
+    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="stylesheet" href="static/css/common-1931s.css">
+    
+    <script id="LA_COLLECT" src="static/js/js-sdk-pro.min.js"></script>
+    <script src="static/js/jquery-3.4.1.min.js"></script>    
+
+<script type="text/javascript" src="static/js/ey_global.js"></script>
+</head>
+
+<body>
+
+<div class="mask"><img src='static/picture/arrow.png'></div>
+     <div id="app" class="framework7-root">
+
+        <!-- Ambition-底部版权-->
+        <div class="views tabs safe-edges">
+
+            <div id="view-main-page" class="view view-main tab tab-active">
+                <div class="page page-current" data-name="home">
+                    <!---首页-->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left" style="left: 20px;">
+                                <div class="refreshBtnDiv">
+                                    <span class="refreshText">Refreshing...
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="title sliding" style="left: 0px;">林先生苹果工具箱</div>
+              <div class="right" style="right: 10px;">
+                                    
+                                <font color="#888888">林先生</font>&nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewbox="0 0 847 1058.75" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
+                    </defs><g><path fill="#4cd964" d="M423 23c221,0 400,179 400,400 0,221 -179,400 -400,400 -221,0 -400,-179 -400,-400 0,-221 179,-400 400,-400zm-86 469l275 -275c13,-13 33,-13 45,0l36 35c12,13 12,33 0,45l-333 333c-13,12 -33,12 -45,0l-161 -161c-12,-12 -12,-32 0,-45l36 -35c12,-13 32,-13 45,0l102 103z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+<div class="page-content">
+                        <div class="page-body">
+                            			<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+  
+
+      .swiper {
+        width: 100%;
+        height: 120px;
+		    border-radius: 10px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+	  
+	          <div class="swiper-slide">
+		
+		   <a href='https://simhaoka.com/phone/index?id=54F506338E0F5AD2EE646BBA7B31DF44' target="_self"><img src='static/picture/1-240319231H0E3.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='https://lin.mads.vip/' target="_self"><img src='static/picture/1-23042F34621524.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='index-home_View_index_788.html' target="_self"><img src='static/picture/1-240320000Q43G.png' alt=''></a>
+		</div>
+               <div class="swiper-slide">
+		
+		   <a href='http://qpdau.yhzu.cn/' target="_self"><img src='static/picture/1-230414163425346.jpg' alt=''></a>
+		</div>
+             </div>
+    
+      
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="static/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+     <div style=" line-height: 40px;">
+     <marquee behavior="scroll" direction="left">
+       长期套可选号，正规的流量卡通用大流量，首页领取，套餐线上线下可查，不是物联卡，防止失联，一定要关注下公众号。各位且行且珍惜.更新不易.望善待    </marquee>
+                   </div>    
+                            
+                            <div class="page-section categories">
+                                <div class="collection">
+                                    <div class="row">
+									
+									
+									
+                                        <div class="col-33">
+                                            <a href="index.html" class="external item-link item-content">
+                                                <div class="category ">
+                                                    <div class="apps catbloc ">
+                                                        网站首页                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+
+                                        <div class="col-33">
+                                            <a href="index-home_Lists_index_97.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31T15B.png" alt="吃喝玩乐"></div><span>吃喝玩乐</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_70.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3092M38.png" alt="快捷指令"></div><span>快捷指令</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc on">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R30302529.png" alt="内购限免"></div><span>内购限免</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_71.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32034432.png" alt="实用软件"></div><span>实用软件</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_72.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31223357.png" alt="系统.巨魔"></div><span>系统.巨魔</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_76.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R33255W0.png" alt="观影神器"></div><span>观影神器</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_77.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32425228.png" alt="TestFlight"></div><span>TestFlight</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_78.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3133G34.png" alt="实用网站"></div><span>实用网站</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_85.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R25T0258.png" alt="小说音乐"></div><span>小说音乐</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_98.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-240924143T9364.png" alt="越狱工具"></div><span>越狱工具</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index2.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R31543Q0.png" alt="在线工具"></div><span>在线工具</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_91.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R33112949.png" alt="共享账号"></div><span>共享账号</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_93.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R32R1509.png" alt="留言投稿"></div><span>留言投稿</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                                                         <div class="col-33">
+                                            <a href="index-home_Lists_index_87.html" class="external item-link item-content">
+                                                <div class="category">
+                                                    <div class="apps catbloc ">
+                                                        <div class="cate-f"><div class="cate-fimg"><img src="static/picture/1-24091R3164GY.png" alt="友情链接"></div><span>友情链接</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                 
+                                       
+
+  <div class="search_form" style="margin-top: 5px;">   <form method='get' action='/index.php?m=home&c=Search&a=lists'>
+    <input type="hidden" name="m" value="home"><input type="hidden" name="c" value="Search"><input type="hidden" name="a" value="lists"><input type="hidden" name="method" value="1">    <input type="text" name='keywords' class="input_text" placeholder="关键词全网搜索">
+    <input type='submit' value="🔍搜索" class="input_sub">
+  </form>
+   </div>
+<div style="width: 100%;line-height: 40px;">
+  <marquee behavior="scroll" direction="left">
+  内购0元限免的应用，随时恢复原价，如果显示收费请勿支付  </marquee>
+</div>
+  
+
+
+<style>
+    .r-text { 
+	    position:relative;
+    }
+	.r-text .category{width:calc(100% - 110px) !important; }
+   .app-sbth{ position:absolute; z-index:2; right:12px; top:50%; margin-top:-15px !important;}
+    </style>											
+								
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="https://gofans.cn/">
+                                                <img src="static/picture/1-240416144130541.png" alt="每日限免（只是限免不是内购）">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>每日限免（只是限免不是内购）</span> 													
+													</div>
+                                                <div class="category">
+                                                    												</div>
+                                                <div class="category">
+                                                    下面的是零元内购永久会员限免应用                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="https://gofans.cn/">
+                                                    打开                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="https://gofans.cn/">
+                                                    打开                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2762.html">
+                                                <img src="static/picture/1-2411241Z409207.jpeg" alt="照片保险库">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>照片保险库</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    1，打开软件，需要为软件设置密码，连续输入2次密码。进入主界面后，点击右上角按钮进入设置。2，设置界面，点击高级，进入内购。3，内购界面，选中 ￥0.00 终身后点击底部按钮进行购买。												</div>
+                                                <div class="category">
+                                                    2024-11-24：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2762.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2762">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2760.html">
+                                                <img src="static/picture/1-24112314505IP.webp" alt="Excellent English">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Excellent English</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    Excellent English：英语学习app，按不同主题显示进度，终身会员限时免费领取，对于英语初学者以及小朋友学习英语来说还是很有用的。												</div>
+                                                <div class="category">
+                                                    2024-11-23：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2760.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2760">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2759.html">
+                                                <img src="static/picture/1-241123144RSP.webp" alt="打印机">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>打印机</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    The Printer App: Smart Printer：打印机，打印照片、文件、笔记、海报、联系人等等，终身内购免费获取。												</div>
+                                                <div class="category">
+                                                    2024-11-23：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2759.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2759">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2758.html">
+                                                <img src="static/picture/1-241123144634513.webp" alt="Pronounce Words">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Pronounce Words</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    Pronounce Words - Hear it：单词是如何发音的，以及母语人士是如何用多种语言表达这个单词的，包括；英语（英式、美式）、德语、西班牙语、法语、意大利语、丹麦语、葡萄牙语、瑞典语、中文、日语和波兰语。录下你自己发音的声音，并收到关于你发音准确性的即时反馈。内购限时获取。												</div>
+                                                <div class="category">
+                                                    2024-11-23：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2758.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2758">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2757.html">
+                                                <img src="static/picture/1-241123145254Z4.webp" alt="GPX查看器">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>GPX查看器</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    GPX Viewer - Map：GPX查看器，GPX（GPS Exchange Format）是一种用于存储GPS数据的XML格式文件。它通常用于记录和分享航迹、路线和兴趣点（POI）。支持导入GPX文件，专业版购买，可以切换其他地图类型，标准，混合，卫星和扩展的跟踪功能。												</div>
+                                                <div class="category">
+                                                    2024-11-23：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2757.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2757">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2756.html">
+                                                <img src="static/picture/1-241123143Z2240.webp" alt="AI Money Tracker">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>AI Money Tracker</span> <span class="title-tips">上架中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款记账APP,首次打开，跳过引导，进去首页，点击右下角人像图标，点击皇冠标志，看到lifetime为0.00，点击continue。目前这款高级版正在限免中，手慢无。												</div>
+                                                <div class="category">
+                                                    2024-11-23：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2756.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2756">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2739.html">
+                                                <img src="static/picture/1-2411191TA0D1.webp" alt="我的间隔计时器">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>我的间隔计时器</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款计时器工具。1，打开软件，主界面点击右上角按钮进入设置。2，设置界面，点击移除广告，进入内购。3，内购界面，点击底部只需 ￥0.00 购买。												</div>
+                                                <div class="category">
+                                                    2024-11-19：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2739.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2739">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2738.html">
+                                                <img src="static/picture/1-2411191T053414.webp" alt="Simple Border">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Simple Border</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款可以在ins发布全尺寸照片的工具，目前软件的专业版内购正在限时免费中，打开软件一直点击下一步就能看到内购，lifetime显示0即可免费解锁，限免软件手慢无！												</div>
+                                                <div class="category">
+                                                    2024-11-19：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2738.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2738">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2737.html">
+                                                <img src="static/picture/1-2411191S64a05.webp" alt="Chosen Daily Virtues">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Chosen Daily Virtues</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款需要iOS 17.0或更高版本才能使用的圣经工具，目前可以免费解锁永久完整版，打开软件后一直点击下一步就会弹出内购选项，‍‍‍Lifetime限时0即可免费获取。												</div>
+                                                <div class="category">
+                                                    2024-11-19：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2737.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2737">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2727.html">
+                                                <img src="static/picture/1-24111H132361H.webp" alt="复古相机与滤镜">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>复古相机与滤镜</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一个可以解锁所有内容的滤镜APP，软件支持中文，使用起来非常简单，导入照片选择滤镜，然后在手动调节参数保存即可												</div>
+                                                <div class="category">
+                                                    2024-11-17：限免可能随时恢复原价，如果显示收费请勿支付                                                                &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2727.html">
+                                                    关注                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2727">
+                                                    关注                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2722.html">
+                                                <img src="static/picture/1-241116204240359.webp" alt="相机001 ">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>相机001 </span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款专业相机，1，打开软件，点击右上角 Pro 按钮进入界面。2，点击 AF-C 按钮，就会进入内购界面。3，内购界面，点击免费/全部永久购买。												</div>
+                                                <div class="category">
+                                                    2024-11-16：限免可能随时恢复原价，如果显示收费请勿支付                                                       &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2722.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2722">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2705.html">
+                                                <img src="static/picture/1-241111145355559.webp" alt="Home Remedies ">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Home Remedies </span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    需要特殊网络，一款护发指南，内置了很多关于养发护发的建议，适合各种发质、年龄和风格偏好，目前可以免费解锁终身完整版，打开软件登陆后一直下一步就能看到内购，lifetime问显0即可免费解锁。												</div>
+                                                <div class="category">
+                                                    2024-11-11：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2705.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2705">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2704.html">
+                                                <img src="static/picture/1-241111145050224.webp" alt="ScheduleNote ">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>ScheduleNote </span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款功能丰富的日程管理软件，目前可以免费解锁终身完整版，打开软件进入设置，选择购买和恢复，离线完全访问显0即可免费解锁												</div>
+                                                <div class="category">
+                                                    2024-11-11：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2704.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2704">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2703.html">
+                                                <img src="static/picture/1-241111144A6318.webp" alt=" To-Do App">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span> To-Do App</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款管理日常事务并实现目标的提醒软件。目前可以免费解锁终身完整版，打开软件进入设置，选择顶部进入内购，点击All plans 身显示0即可免费解锁，软件需要iOS 17.0或更高版本。												</div>
+                                                <div class="category">
+                                                    2024-11-11                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2703.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2703">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2695.html">
+                                                <img src="static/picture/1-24110Q4255H32.webp" alt="PDF编辑器">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>PDF编辑器</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款正在内购限免的pdf编辑器和制作器——《PDF Mpjex》，软件支持网页转PDF、图片转PDF、合并PDF文件、提取PDF、提取PDF图片等等，功能非常多，需要的小伙伴可自行探索！												</div>
+                                                <div class="category">
+                                                    2024-11-8：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2695.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2695">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2687.html">
+                                                <img src="static/picture/1-24110620194IA.webp" alt="Diet Diary: 菜单计划">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Diet Diary: 菜单计划</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款膳食宏观追踪应用，可让您更轻松、无压力地创建膳食日记。目前软件显示内购限免，获取时注意确认价格，手慢无！												</div>
+                                                <div class="category">
+                                                    2024-11-6：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2687.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2687">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2686.html">
+                                                <img src="static/picture/1-241106201634950.webp" alt="Subjects">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Subjects</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款追踪课程表、家庭作业和评分的工具，凭借整洁的界面和复杂的算法成为高中生、大学生和任何学习者的完美生产力工具。目前软件显示正在内购限免，点击设定-同步-显示订阅计划-显示所有选项-Lifetime，显示价格为0即可获取！												</div>
+                                                <div class="category">
+                                                    2024-11-6：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2686.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2686">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2675.html">
+                                                <img src="static/picture/1-2411041H41M00.webp" alt="智能电视">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>智能电视</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    iPad   终身内购限免，「TV Cast for Smart TV +」一款智能电视投屏工具应用。												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2675.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2675">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2674.html">
+                                                <img src="static/picture/1-2411041G450263.webp" alt="制作波形视频">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>制作波形视频</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                       终身内购限免，一款波形视频制作应用												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2674.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2674">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2673.html">
+                                                <img src="static/picture/1-2411041G21GK.webp" alt="恐龙世界侏罗纪化石">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>恐龙世界侏罗纪化石</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款关于恐龙的参考读物应用，应用采用图文并茂的方式，并提供了两种浏览方式，滑动展示及360度视图，加文字以及精美的插画。												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2673.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2673">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2672.html">
+                                                <img src="static/picture/1-2411041FRR10.webp" alt=" 颜色名称查找器">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span> 颜色名称查找器</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款功能齐全的颜色管理软件，可以快速地创建自己颜色库，生成或转换颜色。目前软件显示内购正在限时免费中，获取时注意确认价格，切勿付款购买！												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2672.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2672">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2671.html">
+                                                <img src="static/picture/1-2411041F631502.webp" alt="Authenticator">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>Authenticator</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    一款2FA双因素身份验证应用。目前软件显示内购正在限时免费中，获取时注意确认价格，切勿付款购买												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2671.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2671">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2670.html">
+                                                <img src="static/picture/1-2411041F149100.webp" alt="闪存卡制作工具">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>闪存卡制作工具</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    WordSnap 是一款超级高效的学习APP让你告别传统乏味的学习方法只要拍照或者导入照片软件AI就会识别翻译词汇												</div>
+                                                <div class="category">
+                                                    2024-11-4：限免可能随时恢复原价，如果显示收费请勿支付                                                    &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2670.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2670">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+                <div class="external item-link item-content">
+								  <div class="apps-list">
+                                        <div class="row app-block">
+                                            <div class="left-col col-20">
+                                            <a href="index-home_View_index_2653.html">
+                                                <img src="static/picture/1-2410301A349C4.webp" alt="计算器 mini">
+                                                </a>
+                                            </div>
+                                            <div class="right-col col-75 r-text">
+                                            
+                                                <div class="title">
+                                               
+												    <span>计算器 mini</span> <span class="title-tips">限免中</span>													
+													</div>
+                                                <div class="category">
+                                                    高级版的计算器，软件的优点就是小巧、轻快优雅												</div>
+                                                <div class="category">
+                                                    2024-10-30：限免可能随时恢复原价，如果显示收费请勿支付                                                                                              &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                                                                        &thinsp;&thinsp;
+                                                    												</div>
+                                                 <div class="getBtn app-sbth">
+                                                   <a href="index-home_View_index_2653.html">
+                                                    安装                                                    </a>
+                                                </div>    
+                                            </div>
+                                              <!--<div class="col-25">
+                                                <div class="getBtn">
+                                                <a href="/index.php?m=home&c=View&a=index&aid=2653">
+                                                    安装                                                    </a>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+                                            </div>
+
+<style type="text/css">
+	
+div#pages {
+padding-right:8px;
+white-space: nowrap;
+margin: 8px auto;
+}
+
+div#pages ul{
+margin:0;
+padding:0;
+
+}
+
+div#pages a:link,div#pages a:visited,div#pages a:active{
+color:#000;/*非当前页*/
+text-decoration: none;
+
+}
+
+div#pages a:hover{
+color:#25C01B;/*鼠标滑过*/
+text-decoration: none;
+
+}
+
+div#pages li{
+margin:3px;
+padding:8px 16px;
+list-style-type: none;
+float:left;
+border:1px #1D5124 solid;/*边框颜色*/
+white-space: nowrap;
+
+}
+</style>
+<div id="pages"><ul> <li><a>首页</a></li> <li><a>上一页</a></li> <li><a href="index-home_Lists_index_92_2.html" data-ey_fc35fdc="html" data-tmp="1">下一页</a></li> <li><a href="index-home_Lists_index_92_6.html" data-ey_fc35fdc="html" data-tmp="1">末页</a></li></ul></div>
+                                      
+  <link rel="stylesheet" type="text/css" href="static/css/privacy.css">
+  <div class="privacy-main">
+      <div class="privacy-main-title">网站公告</div>
+      <div class="privacy-main-img"><img src="static/picture/1-240919232632628.jpg"></div>
+      <div class="privacy-main-content">
+        <div class="privacy-main-tit">网站每日IP已突破三千，感谢大家支持，每日坚持更新，商店版APP都是手慢无，没时间实时同步，需要流量卡首页免费领取，套餐线下营业厅，线上官方APP，均可查</div>
+         <span class="privacy-bth">确定</span>
+      </div>
+  </div>
+<div id="privacy-mask"></div>
+<script>
+  $(".privacy-bth").click(function(){
+       const url='/index.php?m=home&c=lists&a=Privacy';
+	   $.ajax({
+			// async:false,
+			url: url,
+			data: {name:'ok'},
+			type: 'post',
+			dataType: 'json',
+			success: function (response) {
+				console.log(response);
+				var res = response.data;
+				if (res.status == 2) {
+			      $(".privacy-main").css('display','none');
+	              $("#privacy-mask").css('display','none');
+				} 
+			},
+			error: function () {
+				console.log(1);
+			}
+		});
+    }) 
+</script>
+			
+
+<script src="static/js/fireworks.js"></script></div></div></div></div></div></div></div></div></div></body></html></html>

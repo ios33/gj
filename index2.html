@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>林先生在线工具箱 - 非常Nice的在线工具网</title>
+    <meta name="keywords" content="工具,源码查看器原创,在线,工具">
+    <meta name="description" content="这是一个非常Nice的在线工具箱">
+    <link rel="stylesheet" href="static/css/dashlite.css">
+	<link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body class="nk-body npc-invest bg-lighter ">
+    <!-- wrap @s -->
+    <div class="nk-wrap ">
+        <!-- main header @s -->
+<div class="nk-header nk-header-fluid nk-header-fixed is-light">
+    <div class="container-xl">
+        <div class="nk-header-wrap link-between">
+            <div class="nk-menu-trigger mr-sm-2 d-lg-none">
+                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-menu"></em></a>
+            </div>
+            <div class="nk-header-brand">
+                <a href="" class="logo-link text-base"><img src="static/picture/logo.png" class="hide-mb-sm">林先生在线工具箱</a>
+            </div>
+            <!-- .nk-header-brand -->
+            <div class="nk-header-tools nk-header-menu" data-content="headerNav">
+                <div class="nk-header-mobile">
+                    <div class="nk-header-brand">
+                        <a href="" class="logo-link text-base">
+                            <span class="nio-version" style="font-size: 21px;position: inherit;">林先生在线工具箱</span>
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div>
+                <!-- Menu -->
+                <ul class="nk-menu nk-menu-main">
+                    <li class="nk-menu-item active">
+                        <a href="" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-home"></em>
+                            <span class="nk-menu-text">首页</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item ">
+                        <a href="stars.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-heart"></em>
+                            <span class="nk-menu-text">我的收藏</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item ">
+                        <a href="comment.html" class="nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-comments"></em>
+                            <span class="nk-menu-text">留言反馈</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- .nk-header-menu -->
+            <div class="no-gutters">
+                <ul class="nk-quick-nav">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="progress-rating dark-switch ">
+                            <span class="nk-menu-icon">
+                                <em class="icon ni ni-moon"></em>
+                                <em class="icon ni ni-sun d-none"></em>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown user-dropdown order-sm-first ">
+                                                <a href="login.html" class="dropdown-toggle nk-menu-link nk-ibx-action-item">
+                            <em class="icon ni ni-user-circle mr-1"></em>
+                            <div class="">
+                                未登录
+                            </div>
+                        </a>
+                                            </li>
+                    <!-- .dropdown -->
+                </ul>
+                <!-- .nk-quick-nav -->
+            </div>
+            <!-- .nk-header-tools -->
+        </div>
+        <!-- .nk-header-wrap -->
+    </div>
+    <!-- .container-fliud -->
+</div>
+<!-- main header @e -->
+        <!-- content @s -->
+        
+<div class="nk-content nk-content-lg nk-content-fluid pt-5 pb-5 bannerbg" style="background: url(static/image/back.png);">
+    <div class="container-xl">
+        <div class="form-control-wrap circle">
+            <div class="form-text-hint-lx">
+                <span class="overline-title"><em class="icon ni ni-search"></em></span>
+            </div>
+            <input type="text" class="form-control form-control-lx btn-round" id="searchkw" placeholder="搜索工具(Ctrl+F)" autocomplete="off">
+        </div>
+    </div>
+</div>
+<!-- content @s -->
+<div class="nk-content nk-content-fluid p-0">
+    <div class="nk-block">
+        <div class="card">
+            <div class="card-inner p-2">
+                <div class="container-xl">
+                    <nav>
+                        <ul class="breadcrumb breadcrumb-pipe">
+                            <li class="breadcrumb-item fs-16px category-all active"><a href="javascript:show_tool_list(0)">全部</a></li>
+                                                        <li class="breadcrumb-item fs-16px category-item" data-id="1"><a href="javascript:show_tool_list(1)">站长工具</a></li>
+                                                        <li class="breadcrumb-item fs-16px category-item" data-id="2"><a href="javascript:show_tool_list(2)">开发工具</a></li>
+                                                        <li class="breadcrumb-item fs-16px category-item" data-id="3"><a href="javascript:show_tool_list(3)">实用工具</a></li>
+                                                        <li class="breadcrumb-item fs-16px category-item" data-id="5"><a href="javascript:show_tool_list(5)">ＱＱ工具</a></li>
+                                                        <li class="breadcrumb-item fs-16px category-item" data-id="4"><a href="javascript:show_tool_list(4)">娱乐工具</a></li>
+                                                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content @s -->
+<div class="nk-content nk-content-lg nk-content-fluid">
+    <div class="container-xl">
+        <div class="nk-content-body">
+                        <div id="toollist"></div>
+            <div class="card card-preview" id="link_content" style="display:none">
+                <div class="card-inner mt-3">
+                    <div class="nya-title nk-ibx-action-item progress-rating">
+                        <em class="icon ni ni-link"></em>
+                        <span class="nk-menu-text font-weight-bold">友情链接</span>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-12">
+                        <ul class="preview-list">
+                                                        <li class="preview-item">
+                                <a href="index.html" class="btn btn-wider btn-outline-info btn-sm" target="_blank">林先生苹果工具箱</a>
+                            </li>
+                                                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+        <!-- content @d -->
+        <div class="nk-footer nk-footer-fluid bg-lighter">
+    <div class="container-xl">
+        <div class="nk-footer-wrap">
+            <div class="nk-footer-copyright"> &copy; 2024 林先生在线工具箱 <br>本站由<a href="https://www.tiezhuwangluo.com">工具箱网</a>强力驱动            </div>
+        </div>
+    </div>
+</div>
+<!-- footer @e -->
+    </div>
+    <!-- wrap @e -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/layer.js"></script>
+<script src="static/js/nioapp.min.js"></script>
+<script src="static/js/script.js"></script>
+<script src="static/js/common.js"></script>
+
+<script>
+var tool_list = [{"id":1,"title":"\u7ad9\u957f\u5de5\u5177","icon":"icon ni ni-setting","items":[{"id":65,"title":"\u7f51\u9875\u6e90\u4ee3\u7801\u67e5\u770b","alias":"viewhtml","keyword":"wangyeyuandaimachakan,wyydmck","request_count":473,"category_id":1,"level":0,"url":"\/viewhtml","out":false},{"id":35,"title":"IP\u5730\u5740\u67e5\u8be2","alias":"ip","keyword":"ipdizhichaxun,ipquery,ipdzcx","request_count":485,"category_id":1,"level":0,"url":"\/ip","out":false},{"id":34,"title":"ICP\u5907\u6848\u67e5\u8be2","alias":"icp","keyword":"icpbeianchaxun,icpbacx","request_count":96,"category_id":1,"level":0,"url":"\/icp","out":false},{"id":36,"title":"\u57df\u540dWhois\u67e5\u8be2","alias":"whois","keyword":"yumingwhoischaxun,ymwhoiscx","request_count":80,"category_id":1,"level":0,"url":"\/whois","out":false},{"id":55,"title":"\u817e\u8baf\u57df\u540d\u62e6\u622a\u67e5\u8be2","alias":"checkurl","keyword":"yuminglanjiechaxun,ymljcx","request_count":61,"category_id":1,"level":0,"url":"\/checkurl","out":false},{"id":56,"title":"\u51c0\u7f51\u4e91\u5251\u62e6\u622a\u67e5\u8be2","alias":"cqqgsafe","keyword":"jingwangyunjianlanjiechaxun,jwyjljcx","request_count":58,"category_id":1,"level":0,"url":"\/cqqgsafe","out":false},{"id":66,"title":"\u6570\u5b57IP\u5730\u5740\u8f6c\u6362","alias":"ip_num","keyword":"shuziipdizhizhuanhuan,szipdzzh","request_count":88,"category_id":1,"level":0,"url":"\/ip_num","out":false},{"id":31,"title":"\u7f51\u7ad9Favicon\u83b7\u53d6","alias":"favicon","keyword":"wangzhanfaviconhuoqu,wzfaviconhq","request_count":34,"category_id":1,"level":0,"url":"\/favicon","out":false},{"id":53,"title":"\u4e2d\u6587\u57df\u540d\u8f6c\u7801","alias":"punycode","keyword":"zhongwenyumingzhuanma,zwymzm,punycode","request_count":42,"category_id":1,"level":0,"url":"\/punycode","out":false},{"id":58,"title":"MySQL\u7ba1\u7406\u5668","alias":"\/tool\/mysql\/","keyword":"mysqlguanliqi,mysqlglq","request_count":62,"category_id":1,"level":0,"url":"\/tool\/mysql\/","out":true},{"id":57,"title":"\u624b\u673a\u5728\u7ebfFTP","alias":"http:\/\/ftp.cccyun.cc\/","keyword":"shoujizaixianftp,sjzxftp","request_count":169,"category_id":1,"level":0,"url":"http:\/\/ftp.cccyun.cc\/","out":true},{"id":68,"title":"\u67e5\u770bHTTP\u8bf7\u6c42","alias":"http","keyword":"chakanhttpqingqiu,ckhttpqq","request_count":44,"category_id":1,"level":0,"url":"\/http","out":false},{"id":71,"title":"PING\u7f51\u7ad9\u6d4b\u901f","alias":"https:\/\/ping.chinaz.com\/","keyword":"pingwangzhancesu,pingwzcs","request_count":186,"category_id":1,"level":0,"url":"https:\/\/ping.chinaz.com\/","out":true},{"id":70,"title":"SEO\u7efc\u5408\u67e5\u8be2","alias":"https:\/\/seo.chinaz.com\/","keyword":"seozonghechaxun,seozhcx","request_count":33,"category_id":1,"level":0,"url":"https:\/\/seo.chinaz.com\/","out":true},{"id":73,"title":"HTTP\u72b6\u6001\u67e5\u8be2","alias":"http_status","keyword":"httpzhuangtaichaxun,httpztcx","request_count":51,"category_id":1,"level":0,"url":"\/http_status","out":false},{"id":74,"title":"\u57df\u540dDNS\u67e5\u8be2","alias":"dns","keyword":"yumingdnschaxun,ymdnscx","request_count":37,"category_id":1,"level":0,"url":"\/dns","out":false}]},{"id":2,"title":"\u5f00\u53d1\u5de5\u5177","icon":"icon ni ni-code","items":[{"id":54,"title":"\u7f16\u7801\u89e3\u7801\u5668","alias":"decode","keyword":"bianmajiemaqi,bmjmq","request_count":69,"category_id":2,"level":0,"url":"\/decode","out":false},{"id":22,"title":"\u5b57\u8282\u8ba1\u7b97\u5668","alias":"byte_calc","keyword":"zijiejisuanqi,zjjsq","request_count":51,"category_id":2,"level":0,"url":"\/byte_calc","out":false},{"id":33,"title":"\u5728\u7ebf\u8fdb\u5236\u8f6c\u6362","alias":"hex_convert","keyword":"zaixianjinzhizhuanhuan,zxjzzh","request_count":25,"category_id":2,"level":0,"url":"\/hex_convert","out":false},{"id":28,"title":"GitHub\u4e0b\u8f7d\u52a0\u901f","alias":"github","keyword":"github,xiazaijiasu,xzjs","request_count":103,"category_id":2,"level":0,"url":"\/github","out":false},{"id":45,"title":"RSA\u516c\u79c1\u94a5\u751f\u6210","alias":"rsa","keyword":"rsagongsiyueshengcheng,rsagsysc","request_count":25,"category_id":2,"level":0,"url":"\/rsa","out":false},{"id":26,"title":"\u5bf9\u79f0\u52a0\u5bc6\u89e3\u5bc6","alias":"encrypt","keyword":"duichenjiamijiemi,dcjmjm","request_count":26,"category_id":2,"level":0,"url":"\/encrypt","out":false},{"id":51,"title":"UUID\u751f\u6210\u5668","alias":"uuid","keyword":"uuidshengchengqi,guid,uuidscq","request_count":59,"category_id":2,"level":0,"url":"\/uuid","out":false},{"id":41,"title":"Markdown\u5728\u7ebf\u7f16\u8f91","alias":"markdown","keyword":"markdownzaixianbianji,markdownzxbj","request_count":10,"category_id":2,"level":0,"url":"\/markdown","out":false},{"id":40,"title":"Linux\u547d\u4ee4\u67e5\u8be2","alias":"linux_command","keyword":"linuxminglingchaxun,linuxmlcx","request_count":40,"category_id":2,"level":0,"url":"\/linux_command","out":false},{"id":39,"title":"JSON\u89e3\u6790\u683c\u5f0f\u5316","alias":"json","keyword":"jsonjiexigeshihua,jsonjxgsh","request_count":16,"category_id":2,"level":0,"url":"\/json","out":false},{"id":21,"title":"JavaScript\u683c\u5f0f\u5316\/\u538b\u7f29","alias":"code_js","keyword":"javascriptgeshihuayasuo,jsgshys","request_count":9,"category_id":2,"level":0,"url":"\/code_js","out":false},{"id":20,"title":"Html\u683c\u5f0f\u5316\/\u538b\u7f29","alias":"code_html","keyword":"htmlgeshihuayasuo,htmlgshys","request_count":8,"category_id":2,"level":0,"url":"\/code_html","out":false},{"id":19,"title":"CSS\u683c\u5f0f\u5316\/\u538b\u7f29","alias":"code_css","keyword":"cssgeshihuayasuo,cssgshys","request_count":3,"category_id":2,"level":0,"url":"\/code_css","out":false},{"id":67,"title":"RGB\u989c\u8272\u5bf9\u7167\u8868","alias":"rgb_color","keyword":"rgbyanseduizhaobiao,rgbysdzb","request_count":32,"category_id":2,"level":0,"url":"\/rgb_color","out":false},{"id":42,"title":"MimeType\u7c7b\u578b\u8868","alias":"mime_type","keyword":"mimetypeleixingbiao,mimetypelxb","request_count":6,"category_id":2,"level":0,"url":"\/mime_type","out":false}]},{"id":3,"title":"\u5b9e\u7528\u5de5\u5177","icon":"icon ni ni-map","items":[{"id":29,"title":"QQ\u767e\u5ea6\u9ad8\u901f\u56fe\u5e8a","alias":"imghosting","keyword":"qqbaidugaosutuchuang,qqbdgstc","request_count":164,"category_id":3,"level":0,"url":"\/imghosting","out":false},{"id":30,"title":"uniCloud\u6587\u4ef6\u5feb\u4f20","alias":"unicloud","keyword":"unicloud,wenjiankuaichuan,unicloudwjkc","request_count":15,"category_id":3,"level":0,"url":"\/unicloud","out":false},{"id":60,"title":"QQ\u83b7\u53d6COOKIE","alias":"http:\/\/qweb.sinaapp.com\/tool\/newsid\/","keyword":"qqhuoqucookie,qqhqcookie","request_count":105,"category_id":3,"level":0,"url":"http:\/\/qweb.sinaapp.com\/tool\/newsid\/","out":true},{"id":59,"title":"\u767e\u5ea6BDUSS\u83b7\u53d6","alias":"\/tool\/bduss\/","keyword":"baidubdusshuoqu,bdbdusshq","request_count":13,"category_id":3,"level":0,"url":"\/tool\/bduss\/","out":true},{"id":61,"title":"\u5168\u7f51\u97f3\u4e50\u641c\u7d22","alias":"http:\/\/www.musictool.top\/","keyword":"quanwangyinyuesousuo,qwyyss,music","request_count":385,"category_id":3,"level":0,"url":"http:\/\/www.musictool.top\/","out":true},{"id":72,"title":"\u97f3\u4e50\u6587\u4ef6\u89e3\u9501","alias":"http:\/\/unlock.musictool.top\/","keyword":"yinyuewenjianjiesuo,yywjjs","request_count":171,"category_id":3,"level":0,"url":"http:\/\/unlock.musictool.top\/","out":true},{"id":69,"title":"\u97f3\u4e50\u5916\u94fe\u8f6c\u6362","alias":"https:\/\/link.hhtjim.com\/","keyword":"yinyuewailianzhuanhuan,yywlzh","request_count":87,"category_id":3,"level":0,"url":"https:\/\/link.hhtjim.com\/","out":true},{"id":62,"title":"\u767e\u5ea6\u7f51\u76d8\u5206\u4eab","alias":"http:\/\/wp.cccyun.cc\/","keyword":"baiduwangpanfenxiang,bdwpfx","request_count":296,"category_id":3,"level":0,"url":"http:\/\/wp.cccyun.cc\/","out":true},{"id":63,"title":"\u624b\u673a\u5f52\u5c5e\u5730\u67e5\u8be2","alias":"mobile","keyword":"shoujiguishudichaxun,sjgsdcx","request_count":181,"category_id":3,"level":0,"url":"\/mobile","out":false},{"id":64,"title":"\u8eab\u4efd\u8bc1\u5f52\u5c5e\u5730\u67e5\u8be2","alias":"idcard","keyword":"shenfenzhengguishudichaxun,sfzgsdcx","request_count":229,"category_id":3,"level":0,"url":"\/idcard","out":false},{"id":37,"title":"\u5728\u7ebf\u56fe\u7247\u7f16\u8f91","alias":"image_editor","keyword":"zaixiantupianbianji,zxtpbj","request_count":146,"category_id":3,"level":0,"url":"\/image_editor","out":false},{"id":44,"title":"\u4e8c\u7ef4\u7801\u751f\u6210","alias":"qrcode","keyword":"erweimashengcheng,ewmsc,qrcode","request_count":166,"category_id":3,"level":0,"url":"\/qrcode","out":false},{"id":38,"title":"\u56fe\u7247\u8f6cbase64","alias":"image2base64","keyword":"tupianzhuanbase64,tpzbase64","request_count":20,"category_id":3,"level":0,"url":"\/image2base64","out":false},{"id":2,"title":"\u968f\u673a\u5bc6\u7801\u751f\u6210","alias":"rand_password","keyword":"suijimimashengcheng,sjmmsc","request_count":76,"category_id":3,"level":0,"url":"\/rand_password","out":false},{"id":27,"title":"\u6587\u4ef6\u54c8\u5e0c\u8ba1\u7b97","alias":"file_hash","keyword":"wenjianhaxijisuan,wenjianhashjisuan,wjhxjs","request_count":23,"category_id":3,"level":0,"url":"\/file_hash","out":false},{"id":32,"title":"\u5b57\u7b26\u4e32\u54c8\u5e0c\u8ba1\u7b97","alias":"str_hash","keyword":"zifuchuanhaxijisuan,zfchxjs","request_count":13,"category_id":3,"level":0,"url":"\/str_hash","out":false},{"id":46,"title":"\u77ed\u7f51\u5740\u751f\u6210","alias":"short_url","keyword":"duanwangzhishengcheng,shorturl,dwzsc","request_count":73,"category_id":3,"level":0,"url":"\/short_url","out":false},{"id":85,"title":"\u77ed\u7f51\u5740\u8fd8\u539f","alias":"unshorturl","keyword":"duanwangzhihuanyuan,dwzhy","request_count":14,"category_id":3,"level":0,"url":"\/unshorturl","out":false},{"id":50,"title":"Unix\u65f6\u95f4\u6233\u8f6c\u6362","alias":"timestamp","keyword":"unixshijianchuozhuanhuan,unixsjczh","request_count":8,"category_id":3,"level":0,"url":"\/timestamp","out":false},{"id":49,"title":"\u5b57\u6570\u7edf\u8ba1\u4e0e\u6392\u7248","alias":"text_count","keyword":"zishutongjiyupaiban,zstjypb","request_count":9,"category_id":3,"level":0,"url":"\/text_count","out":false},{"id":52,"title":"\u4e2d\u6587\u7b80\u7e41\u4f53\u8f6c\u5316","alias":"zh_convert","keyword":"zhongwenjianfantizhuanhua,zwjftzh","request_count":17,"category_id":3,"level":0,"url":"\/zh_convert","out":false},{"id":13,"title":"emoji\u8868\u60c5","alias":"emoji","keyword":"emojibiaoqing,emojibq","request_count":118,"category_id":3,"level":0,"url":"\/emoji","out":false},{"id":47,"title":"\u7279\u6b8a\u7b26\u53f7\u5927\u5168","alias":"special_symbols","keyword":"teshufuhaodaquan,tsfhdq","request_count":136,"category_id":3,"level":0,"url":"\/special_symbols","out":false},{"id":84,"title":"\u5c0f\u7c73\u8fd0\u52a8\u6b65\u6570\u4fee\u6539","alias":"sport","keyword":"xiaomiyundongbushuxiugai,xmydbsxg","request_count":135,"category_id":3,"level":0,"url":"\/sport","out":false},{"id":86,"title":"\u67e5B\u7ad9\u5f39\u5e55\u53d1\u9001\u8005","alias":"bili_danmu","keyword":"chabzhandanmufasongzhe,cbzdmfsz","request_count":93,"category_id":3,"level":0,"url":"\/bili_danmu","out":false},{"id":87,"title":"B\u7ad9\u89c6\u9891\u89e3\u6790","alias":"bili_video","keyword":"bzhanshipinjiexi,bzspjx","request_count":111,"category_id":3,"level":0,"url":"\/bili_video","out":false}]},{"id":5,"title":"\uff31\uff31\u5de5\u5177","icon":"icon ni ni-chat-circle-fill","items":[{"id":79,"title":"QQ\u5f3a\u5236\u804a\u5929","alias":"qqchat","keyword":"qqqiangzhiliaotian,qqqzlt","request_count":927,"category_id":5,"level":0,"url":"\/qqchat","out":false},{"id":83,"title":"\u81ea\u5b9a\u4e49\u5728\u7ebf\u673a\u578b","alias":"online_device","keyword":"zidingyizaixianjixing,zdyzxjx","request_count":452,"category_id":5,"level":0,"url":"\/online_device","out":false},{"id":78,"title":"\u5355\u5411\u597d\u53cb\u68c0\u6d4b","alias":"friend_check","keyword":"qqdanxianghaoyoujiance,qqdxhyjc","request_count":440,"category_id":5,"level":0,"url":"\/friend_check","out":false},{"id":81,"title":"\u8bbe\u7f6e\u7a7a\u767d\u6635\u79f0","alias":"setqqnick","keyword":"shezhikongbainicheng,szkbnc","request_count":216,"category_id":5,"level":0,"url":"\/setqqnick","out":false},{"id":80,"title":"\u751f\u6210\u52a0\u7fa4\u94fe\u63a5","alias":"group_join","keyword":"shengchengjiaqunlianjie","request_count":53,"category_id":5,"level":0,"url":"\/group_join","out":false},{"id":75,"title":"\u63d0\u53d6\u7fa4\u6210\u5458","alias":"group_members","keyword":"tiquqqqunchengyuan,tqqqqcy","request_count":110,"category_id":5,"level":0,"url":"\/group_members","out":false},{"id":76,"title":"\u6279\u91cf\u5220\u9664\u7fa4\u516c\u544a","alias":"group_announce","keyword":"piliangshanchuqungonggao,plscqgg","request_count":20,"category_id":5,"level":0,"url":"\/group_announce","out":false},{"id":77,"title":"\u81ea\u52a9\u89e3\u6563\u7fa4","alias":"group_dismiss","keyword":"zizhujiesanqqqun,zzjsqqq","request_count":149,"category_id":5,"level":0,"url":"\/group_dismiss","out":false}]},{"id":4,"title":"\u5a31\u4e50\u5de5\u5177","icon":"icon ni ni-aperture","items":[{"id":48,"title":"\u5728\u7ebf\u8bed\u97f3\u5408\u6210","alias":"speech_synthesis","keyword":"zaixianyuyinhecheng,zxyyhc","request_count":369,"category_id":4,"level":0,"url":"\/speech_synthesis","out":false},{"id":25,"title":"ASCII\u827a\u672f\u5b57\u751f\u6210","alias":"ascii_art","keyword":"asciiyishuzishengcheng,asciiyszsc","request_count":120,"category_id":4,"level":0,"url":"\/ascii_art","out":false},{"id":23,"title":"\u6587\u7ae0\u751f\u6210\u5668","alias":"bullshit_generator","keyword":"wenzhangshengchengqi,wzscq","request_count":176,"category_id":4,"level":0,"url":"\/bullshit_generator","out":false},{"id":3,"title":"\u652f\u4ed8\u5b9d\u5230\u8d26\u8bed\u97f3","alias":"alipay_arrival","keyword":"zhifubaodaozhangyuyin,zfbdzyy","request_count":351,"category_id":4,"level":0,"url":"\/alipay_arrival","out":false},{"id":5,"title":"\u8ba9\u6d41\u91cf\u6d88\u5931","alias":"bandwidth_waste","keyword":"rangliuliangxiaoshi,rllxs","request_count":440,"category_id":4,"level":0,"url":"\/bandwidth_waste","out":false},{"id":43,"title":"\u5728\u7ebf\u94a2\u7434","alias":"piano","keyword":"zaixiangangqin,piano,zxgq","request_count":381,"category_id":4,"level":0,"url":"\/piano","out":false}]}];
+var tools = [];
+var searchkw = '';
+function show_category_btn(catid){
+    if(catid == 0){
+        $("#link_content").show();
+        $(".category-all").addClass("active");
+        $(".category-item").removeClass("active");
+    }else{
+        $("#link_content").hide();
+        $(".category-all").removeClass("active");
+        $(".category-item").removeClass("active");
+        $.each($(".category-item"), function(index,value){
+            if($(value).attr('data-id') == catid){
+                $(value).addClass("active");
+            }
+        })
+    }
+}
+function show_tool_list(catid){
+    searchkw = '';$("#searchkw").val('');
+    show_category_btn(catid);
+    tools = [];
+    var html = '';
+    $.each(tool_list, function(index, value){
+        if(catid!=0 && value.id!=catid) return;
+        html += `
+<div class="card card-preview category-card" data-category-id="${value.id}">
+    <div class="card-inner mt-3">
+        <div class="nya-title nk-ibx-action-item progress-rating">
+            <em class="${value.icon}"></em>
+            <span class="nk-menu-text font-weight-bold">${value.title}</span>
+        </div>
+    <div class="row g-2">`;
+        $.each(value.items, function(index, value){
+            tools.push(value);
+            html += `
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="${value.url}" data-id="${value.id}" class="btn btn-wider btn-block btn-xl btn-outline-light tool-link" ${value.out?'target="_blank"':''}>${value.title}</a>
+            </div>`
+        })
+        html += `
+        </div>
+    </div>
+</div>`;
+    });
+    $("#toollist").html(html);
+    bind_statistics();
+}
+function show_search_list(){
+    var list = tools.filter(v => {
+        return v.title.indexOf(searchkw) !== -1 || v.keyword!=null && v.keyword.indexOf(searchkw) !== -1
+    })
+    var html = '';
+    html += `
+<div class="card card-preview category-card">
+    <div class="card-inner mt-3">
+        <div class="nya-title nk-ibx-action-item progress-rating">
+            <em class="icon ni ni-search"></em>
+            <span class="nk-menu-text font-weight-bold">搜索结果</span>
+        </div>
+    <div class="row g-2">`;
+    if(list.length>0){
+        $.each(list, function(index, value){
+            html += `
+            <div class="col-lg-3 col-md-4 col-6">
+                <a href="${value.url}" data-id="${value.id}" class="btn btn-wider btn-block btn-xl btn-outline-light tool-link" ${value.out?'target="_blank"':''}>${value.title}</a>
+            </div>`
+        })
+    }else{
+        html += `<p class="search-placeholder">暂无搜索结果</p>`
+    }
+    html += `
+        </div>
+    </div>
+</div>`;
+    $("#toollist").html(html);
+    bind_statistics();
+    $("#link_content").hide();
+    $(".category-all").removeClass("active");
+    $(".category-item").removeClass("active");
+}
+function watch_searchkw(kw){
+    if(kw != searchkw){
+        searchkw = kw;
+        if(searchkw == ''){
+            show_tool_list(0)
+        }else{
+            show_search_list()
+        }
+    }
+}
+function bind_statistics(){
+    $(".tool-link").click(function(){
+	    var id = $(this).attr('data-id');
+        $.ajax({
+            type : "POST",
+            url : "/statistics",
+            data : {id: id},
+            dataType : 'json',
+            async: true,
+            success : function(data) {
+                console.log('statistics ok '+id)
+            }
+        });
+    });
+}
+$(document).ready(function(){
+    show_tool_list(0);
+    $("#searchkw").on('input', function(){
+        watch_searchkw($(this).val().trim().toLowerCase())
+    });
+    $("#searchkw").change(function(){
+        watch_searchkw($(this).val().trim().toLowerCase())
+    });
+    $(document).keydown(function(event){
+        if(event.ctrlKey && event.keyCode==70){
+            $("#searchkw").focus();
+            return false;
+        }
+    });
+})
+</script>
+
+</body>
+</html>

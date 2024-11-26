@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta name="generator" content="AList V3">
+    <meta name="theme-color" content="#000000">
+    <meta name="google" content="notranslate">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="AList">
+    <link rel="apple-touch-icon" href="https://jsd.nn.ci/gh/alist-org/logo@main/logo.png">
+    <script src="static/js/aliyun-web-office-sdk.min.js" async></script>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg">
+    <title>林先生苹果工具箱</title>
+    <script>
+      window.ALIST = {
+        cdn: '',
+        monaco_cdn: undefined,
+        base_path: '/',
+        api: undefined,
+        main_color: '#1890ff',
+      }
+      window.__dynamic_base__ = window.ALIST.cdn || ""
+    </script>
+    
+    
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src= window.__dynamic_base__+e.getAttribute('data-src'),n.onload=function(){System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+    <script>
+(function(){
+var preloads = [{"parentTagName":"head","tagName":"link","attrs":{"href":"/static/manifest.json","rel":"manifest"}},{"parentTagName":"head","tagName":"script","attrs":{"type":"module","crossorigin":"","src":"/assets/index.2ea96c44.js"}},{"parentTagName":"head","tagName":"link","attrs":{"rel":"stylesheet","href":"/assets/index.d81a3e4b.css"}}];
+function setAttribute(target, attrs) {
+for (var key in attrs) {
+  target.setAttribute(key, attrs[key]);
+}
+return target;
+};
+for(var i = 0; i < preloads.length; i++){
+var item = preloads[i]
+var childNode = document.createElement(item.tagName);
+setAttribute(childNode, item.attrs)
+if( window.__dynamic_base__) {
+  if(item.tagName == 'link') {
+    setAttribute(childNode, { href:  window.__dynamic_base__ + item.attrs.href })
+  } else if (item.tagName == 'script') {
+    setAttribute(childNode, { src:  window.__dynamic_base__ + item.attrs.src })
+  }
+}
+document.getElementsByTagName(item.parentTagName)[0].appendChild(childNode);
+}
+})();
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    
+    
+  <link rel="stylesheet" href="static/css/sweetalert2.min.css">
+  <!-- SweetAlert2 JS -->
+  <script src="static/js/sweetalert2@11.js"></script>
+<body>
+   <script>
+    // 检查密码函数
+    function checkPassword(password) {
+      return password === '7711'; // 替换 '' 为实际密码
+    }
+
+    // 显示密码错误弹窗
+    function showPasswordError() {
+      Swal.fire({
+        title: '错误',
+        icon: 'error',
+        text: '密码错误，请重新输入',
+        confirmButtonText: '确定',
+        allowOutsideClick: false,
+      }).then(() => {
+        showPasswordPrompt(); // 重新显示密码输入弹窗
+      });
+    }
+
+    // 显示密码提示弹窗
+    function showPasswordPrompt() {
+      Swal.fire({
+        title: '免责申明',
+        icon: 'info',
+        html: `
+          <p>本站所展示内容均收集于网络</p>
+          <p>仅供本人学习研究及收藏存档</p>
+          <p>如有侵犯权益，敬请联系删除</p>
+         <p>最近网盘失效，现在只存储苹果IPA和巨魔，如需安卓应用在网站首页打开迅雷网盘里面下载</p>
+          <p>密码更新时间: 2024年11月27日</p>
+        `,
+        input: 'password',
+        inputPlaceholder: '输入密码后，点确定访问',
+        showDenyButton: true,
+        denyButtonText: '获取密码',
+        allowOutsideClick: false,
+        confirmButtonText: '确定访问',
+        preConfirm: (password) => {
+          return new Promise((resolve, reject) => {
+            if (!password) {
+              Swal.showValidationMessage('密码不能为空');
+              reject();
+            } else if (checkPassword(password)) {
+              sessionStorage.setItem('passwordVerified', 'true');
+              resolve();
+            } else {
+              showPasswordError(); // 显示密码错误弹窗
+              reject();
+            }
+          });
+        }
+      }).then((result) => {
+        if (result.isDenied) {
+          showPasswordInfo();
+        }
+      });
+    }
+
+    // 显示获取密码信息的弹窗
+    function showPasswordInfo() {
+      Swal.fire({
+        title: '扫描小程序获取密码',
+        icon: 'info',
+        html: `
+          <img src="https://lin.mrlin.vip/xcx.jpg" alt="QR Code">
+        `,
+        confirmButtonText: '返回',
+        allowOutsideClick: false,
+      }).then(() => {
+        showPasswordPrompt(); // 返回后重新显示密码输入弹窗
+      });
+    }
+
+    // 检查密码验证时间
+    function checkPasswordVerification() {
+      const passwordVerified = sessionStorage.getItem('passwordVerified');
+      const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+
+      // 检查是否已经验证过密码
+      if (!passwordVerified) {
+        showPasswordPrompt();
+      }
+     // 检查是否在24小时内已经验证过密码
+      if (!passwordVerifiedAt || (Date.now() - passwordVerifiedAt) > oneDayInMilliseconds) {
+        showPasswordPrompt();
+      }
+    }
+
+    // 页面加载时检查密码验证时间
+    checkPasswordVerification();
+  </script>
+</body>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" data-src="/assets/polyfills-legacy.5c08d6cf.js">!(function() {
+      var e = document.createElement('script')
+      e.src =  window.__dynamic_base__ + document.getElementById('vite-legacy-polyfill').getAttribute('data-src');
+      e.onload = function() {
+        System.import( window.__dynamic_base__+document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+      };
+      document.body.appendChild(e)
+    })();</script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy.17196644.js"></script>
+  </body>
+</html>
