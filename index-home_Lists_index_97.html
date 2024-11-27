@@ -1410,14 +1410,24 @@ white-space: nowrap;
 </style>
 <div id="pages"><ul> <li><a>首页</a></li> <li><a>上一页</a></li> <li><a href="index-home_Lists_index_97_2.html" data-ey_fc35fdc="html" data-tmp="1">下一页</a></li> <li><a href="index-home_Lists_index_97_2.html" data-ey_fc35fdc="html" data-tmp="1">末页</a></li></ul></div>
                                       
- <link rel="stylesheet" type="text/css" href="static/css/privacy.css">
-  <div class="privacy-main">
-      <div class="privacy-main-title">网站公告</div>
-      <div class="privacy-main-img"><img src="static/picture/1-240919232632628.jpg"></div>
-      <div class="privacy-main-content">
-        <div class="privacy-main-tit">网站每日IP已突破三千，感谢大家支持，每日坚持更新，商店版APP都是手慢无，没时间实时同步</div>
-         <span class="privacy-bth">确定</span>
-      </div>
+<script>
+  Swal.fire({
+    title: '温馨提示',
+    icon: 'info',
+    html:
+      '<p>尊贵的用户您好<br>如平台无法付款<br>请联系在线客服</p>',
+    position: 'center', // 设置弹窗居中显示
+    showConfirmButton: true,
+    confirmButtonText: '联系客服',
+    allowOutsideClick: false,
+    showDenyButton: true,
+    denyButtonText: `我知道了`,
+  }).then((result) => {
+    if (!result.isDenied) {
+      window.location.href = 'https://afzs.yhios.cn/wxkf/index.html';
+    }
+  });
+</script>
   </div>
 <div id="privacy-mask"></div>
 <script>
