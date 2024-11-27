@@ -827,21 +827,48 @@ var _hmt = _hmt || [];
 
 
 
-<!-- 弹窗开始 -->
-<div class="web_notice" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.3);z-index: 99999;">
-<div style="position: fixed;top: 50%;left: 50%;width: 350px;background: #FFF;transform: translate(-50%, -50%);border-radius: 40px;padding: 50px 40px;">
-<h3 style="font-weight: bold;text-align: center;font-size: 30px;">网站公告</h2>
-<div style="font-size: 16px;margin-top: 26px;line-height: 30px;color: #999;
-">    <div class="privacy-main-img"><img src="static/picture/1-240919232632628.jpg"></div>
-      <div class="privacy-main-content">
-        <div class="privacy-main-tit">网站每日IP已突破三千，感谢大家支持，每日坚持更新，商店版APP都是手慢无，没时间实时同步，需要流量卡首页免费领取，套餐线下营业厅，线上官方APP，均可查</div>
-</div>
-<div style="font-size: 16px;margin-top: 26px;line-height: 30px;color: #999;
-">
-<a href="mailto:xxxx@163.com">xxxx@163.com</a></p>
-<p>
-<a href="https://www.lifeka.com">一点导航</a></p>
-</div><a style="display: block;background: #98a3ff;color: #FFF;text-align: center;font-weight: bold;font-size: 19px;line-height: 40px;margin: 0 auto;margin-top: 25px;border-radius: 32px;width: 80%;" onclick="javascript:document.querySelector('.web_notice').remove()">关闭</ a></div></div>
+<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script>
+    let password = "4241";
+    
+    if (localStorage.getItem('pan_password') == password) {
 
+    } else {
+        checkPassword("success", "输入密码进入")
+    }
+
+    function checkPassword(ic, ti) {
+        swal({
+                title: "免责申明",
+                text: "\n本站所展示内容均收集于网络\n\n仅供本人学习研究及收藏存档\n如有侵犯权益，敬请联系删除\n公众号：艾峰科技\n回复【验证码】获取密码",
+                closeOnConfirm: false,
+                closeOnClickOutside: false,
+                icon: ic,
+                button: {
+                    text: "确认",
+                },
+                content: {
+                    element: "input",
+                    attributes: {
+                        placeholder: "Type your password",
+                        type: "password",
+                    },
+                },
+            })
+            .then((value) => {
+                if (value == '') {
+                    checkPassword("warning", "请输入正确的密码");
+                } else if (value == password) {
+                    swal("欢迎！下拉刷新即可", {
+                        button: false,
+                    });
+                    localStorage.setItem("pan_password", value);
+                } else {
+                    checkPassword("warning", "密码错误");
+                }
+            });
+
+    }
+</script>
 
 	</body></html></html>
